@@ -28,6 +28,13 @@ File -> Export -> General -> Preferences
 
 See details on <https://github.com/yenbohuang/techNotes/tree/master/IDE>
 
+## Using UTF-8
+
+* Windows > Preferences > General > Content Types, set UTF-8 as the default encoding for all content types.
+* Windows > Preferences > General > Workspace, set "Text file encoding" to "Other : UTF-8".
+
+See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-in-eclipse> 
+
 # eclipse.ini
 
 ## Change UI language
