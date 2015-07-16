@@ -67,8 +67,8 @@ Since a DELETE of a row from the referenced table or an UPDATE of a referenced c
         name text,
         current_mood mood
     );
- 
- # Array
+
+# Array
  
     CREATE TABLE sal_emp (
         name text,

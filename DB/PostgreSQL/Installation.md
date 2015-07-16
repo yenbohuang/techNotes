@@ -17,3 +17,18 @@ For PostgreSQL servers starting with version 8.0, this is controlled using the `
 The initial settings in `pg_hba.conf` are quite restrictive, in order to avoid unwanted security holes caused by unreviewed but mandatory system settings. You'll probably want to add something like 
 
     host all all 192.168.0.0/24 md5 
+
+# Start/stop on Ubuntu
+
+    /etc/init.d/postgresql start/stop
+
+# Set password
+
+    sudo -u postgres psql postgres
+    \password postgres
+
+See details on <https://help.ubuntu.com/community/PostgreSQL> 
+
+# Configuration file on Ubuntu
+
+    /etc/postgresql/9.4/main/postgresql.conf
