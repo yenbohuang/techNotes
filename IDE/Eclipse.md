@@ -24,7 +24,7 @@ File -> Export -> General -> Preferences
 
 ## Enable debug view
 
-![Debug View](./image/debugView.png) 
+![Debug View](https://github.com/yenbohuang/techNotes/blob/master/IDE/images/debugView.png) 
 
 See details on <https://github.com/yenbohuang/techNotes/tree/master/IDE>
 
