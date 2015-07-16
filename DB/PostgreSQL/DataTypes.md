@@ -21,7 +21,7 @@ The following contents are copied from manual.
 |`path`|geometric path on a plane|`[ ( x1 , y1 ) , ... , ( xn , yn ) ]` or `( ( x1 , y1 ) , ... , ( xn , yn ) )`. `[]` -> open path, `()` -> closed path|
 |`point`|geometric point on a plane|`( x , y )`|
 |`polygon`|closed geometric path on a plane|`( ( x1 , y1 ) , ... , ( xn , yn ) )`|
-|circle|circle on a plane|`< ( x , y ) , r >`|
+|`circle`|circle on a plane|`< ( x , y ) , r >`|
 
 
 |Name|Description|
