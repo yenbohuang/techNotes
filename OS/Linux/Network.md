@@ -4,11 +4,11 @@
 
 See details on <http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file> 
 
-# Edit hosts files
+# List all listening port
 
-    sudo nano /etc/hosts
+    netstat -anp
 
-See details on <http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file> 
+See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Security_Guide/s1-server-ports.html>
 
 # Enable SSH server
 
