@@ -8,6 +8,6 @@
 
 |Files|Location|
 |-----|--------|
-|Configuration File|`/etc/congodb.conf`|
+|Configuration File|`/etc/mongodb.conf`|
 |Log File|`/var/log/mongodb`|
 |Repository|`/var/lib/mongodb`|
