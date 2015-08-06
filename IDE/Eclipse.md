@@ -1,10 +1,10 @@
 # Useful plugins
 
-* Subclipse
-* Monjadb (for mongo db)
-* Find bugs
-* Log Viewer
-* Properties Editor
+* Subclipse <https://marketplace.eclipse.org/content/subclipse>
+* Find bugs <https://marketplace.eclipse.org/content/findbugs-eclipse-plugin>
+* Log Viewer <https://marketplace.eclipse.org/content/logviewer>
+* Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
+* Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
 
 
 # Setting
