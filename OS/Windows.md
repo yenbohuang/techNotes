@@ -8,3 +8,9 @@
     netstat -a -b
 
 See details on <http://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows> 
+
+# Lock screen by command line
+
+    C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
+
+See details on <http://superuser.com/questions/838810/how-to-lock-screen-from-command-line-in-windows-8-1>
