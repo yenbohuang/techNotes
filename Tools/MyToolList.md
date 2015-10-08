@@ -4,6 +4,8 @@
 * Visual SVN
 * Cdic
 * CutePDF
+* soapUI
+* Fiddler
 
 # Can be portable
 
