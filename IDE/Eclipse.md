@@ -56,3 +56,12 @@ See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
 * Use URL 'file:///d:/svn-repo/myproject'
 
 See details on <http://www.jayway.com/2009/04/03/setting-up-a-local-subversion-repository-to-use-with-your-eclipse/>
+
+# Using Tomcat in Eclipse
+
+Eclipse use the following in launch configuration:
+
+    -Dcatalina.base="D:\ws-git\.metadata\.plugins\org.eclipse.wst.server.core\tmp0" 
+    -Dcatalina.home="D:\PortablePrograms\apache-tomcat-8.0.28" 
+    -Dwtp.deploy="D:\ws-git\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps" 
+    -Djava.endorsed.dirs="D:\PortablePrograms\apache-tomcat-8.0.28\endorsed"
