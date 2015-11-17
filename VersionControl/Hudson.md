@@ -18,6 +18,7 @@ See details on <http://wiki.eclipse.org/Hudson-ci/Use_Hudson>
       * Example for local SVN: `file:///D:/svn-repo/yenbo/testProject`
     * Check-out Strategy -> Clean check out folders and then checkout
 * Build Environment
+  * **DO NOT** check "Delete workspace before build starts", or Maven plugin will fail.
   *  Abort the build if it's stuck
 * Build
   * Add build step -> Invoke Maven 3
