@@ -1,10 +1,19 @@
 # Useful plugins
 
+Version controls
 * Subclipse <https://marketplace.eclipse.org/content/subclipse>
-* Find bugs <https://marketplace.eclipse.org/content/findbugs-eclipse-plugin>
-* Log Viewer <https://marketplace.eclipse.org/content/logviewer>
+* EGit <http://marketplace.eclipse.org/content/egit-git-team-provider>
+
+Editors
 * Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
 * Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
+* ShellEd <http://sourceforge.net/projects/shelled>
+
+CI
+* Hudson/Jenkins Mylyn Builds Connector <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
+
+Others
+* Find bugs <https://marketplace.eclipse.org/content/findbugs-eclipse-plugin>
 
 
 # Setting
