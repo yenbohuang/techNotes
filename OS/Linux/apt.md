@@ -26,6 +26,7 @@ See details on <http://askubuntu.com/questions/298487/not-enough-free-disk-space
 # Upgrade Ubuntu
 
     sudo apt-get update
-    sudo apt-get full-upgrade
+    sudo apt-get upgrade
+    sudo apt-get dist-upgrade
 
-See details on <http://askubuntu.com/questions/81585/what-is-dist-upgrade-and-why-does-it-upgrade-more-than-upgrade>
+See details on <http://askubuntu.com/questions/462449/update-the-system-from-terminal>
