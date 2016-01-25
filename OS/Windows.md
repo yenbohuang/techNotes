@@ -20,3 +20,9 @@ See details on <http://superuser.com/questions/838810/how-to-lock-screen-from-co
     msconfig
 
 See details on <https://kb.wisc.edu/helpdesk/page.php?id=1868>
+
+# Shortcuts
+
+* Window key + P: Switch screen
+* Window key + L: Lock computer
+* Window key + D: Show desktop
