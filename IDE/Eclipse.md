@@ -8,6 +8,7 @@ Editors
 * Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
 * Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
 * ShellEd <http://sourceforge.net/projects/shelled>
+* Eclipse CDT
 
 CI
 * Hudson/Jenkins Mylyn Builds Connector <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
@@ -74,3 +75,14 @@ Eclipse use the following in launch configuration:
     -Dcatalina.home="D:\PortablePrograms\apache-tomcat-8.0.28" 
     -Dwtp.deploy="D:\ws-git\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps" 
     -Djava.endorsed.dirs="D:\PortablePrograms\apache-tomcat-8.0.28\endorsed"
+
+# Cygwin for CDT
+
+* Install Cygwin dependencies properly. I am too lazy to check them, so, I installed everything.
+* Add "%cygwin%\bin" to "PATH" environment variable.
+* Go to "Windows -> Preference -> C/C++ -> Debug -> Source Lookup Path"
+  * Add "Path Mapping"
+  * "\cygdrive\c" -> "c:\"
+  * "\cygdrive\d" -> "d:\"
+
+See details on <http://wyding.blogspot.tw/2009/04/setup-cygwin-toolchain-in-eclipse-cdt.html>
