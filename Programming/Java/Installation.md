@@ -14,3 +14,10 @@ Do this in shell script:
     sudo chmod a+x /usr/bin/javaws
 
 See details on <http://askubuntu.com/questions/56104/how-can-i-install-sun-oracles-proprietary-java-jdk-6-7-8-or-jre> 
+
+If OpenJDK was installed already, replace it by the following commands: 
+
+    sudo update-alternatives --set "java" "/usr/lib/jvm/jdk1.7.0/bin/java"
+    sudo update-alternatives --set "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac"
+
+TODO: need reference link!
