@@ -10,6 +10,12 @@ See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation>
 
 See details on <https://help.ubuntu.com/community/AptGet/Howto>
 
+# List installed packages
+
+    apt --installed list
+
+See details on <http://askubuntu.com/questions/17823/how-to-list-all-installed-packages>
+
 # Not enough free disk space for "\boot"
 
 1. Check disk space by `df -h`
