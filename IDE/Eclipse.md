@@ -3,7 +3,7 @@
 Editors
 * Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
 * Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
-* ShellEd <http://sourceforge.net/projects/shelled>
+* ShellEd <http://sourceforge.net/projects/shelled>. Note that you don't have to download it from sourceforge. Use "help-> Install New Software" and find "Dynamic Languages Toolkit - ShellEd".
 * Eclipse CDT
 
 CI
