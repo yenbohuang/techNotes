@@ -37,3 +37,10 @@ See details on <http://maven.apache.org/install.html>.
       <profiles/>
       <activeProfiles/>
     </settings>
+
+# Cannot change version of project facet Dynamic Web Module to 2.5
+
+* Deselect the Dynamic Web Module in your project facets. Right click the "Project -> preferences -> Project Facets".
+* Then run Maven -> Update Project again.
+
+See details on <http://stackoverflow.com/questions/25551213/cannot-change-version-of-project-facet-dynamic-web-module-to-2-5>.
