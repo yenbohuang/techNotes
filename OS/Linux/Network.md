@@ -19,3 +19,19 @@ See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise
     sudo restart ssh
 
 See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring> 
+
+# /etc/resolv.conf
+
+* Add nameserver in this file
+
+    sudo nano /etc/resolvconf/resolv.conf.d/head
+
+* Add search in this file
+
+    sudo nano /etc/resolvconf/resolv.conf.d/tail
+
+* Update
+
+    sudo resolvconf -u
+
+See details on <http://www.lampnode.com/linux/howto-setup-nameserver-on-ubuntu-1404-by-resolvconf/>
