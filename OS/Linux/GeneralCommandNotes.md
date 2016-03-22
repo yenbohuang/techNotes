@@ -12,3 +12,11 @@
 ```
 
 See details on <http://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout>
+
+## Redirect stderr to stdout
+
+```
+   some-command 2>&1
+```
+
+See details on <http://superuser.com/questions/71428/what-does-21-do-in-command-line>
