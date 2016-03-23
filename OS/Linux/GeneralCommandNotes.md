@@ -20,3 +20,12 @@ See details on <http://stackoverflow.com/questions/418896/how-to-redirect-output
 ```
 
 See details on <http://superuser.com/questions/71428/what-does-21-do-in-command-line>
+
+## Decompress files
+
+```
+   tar -vxjf /mnt/mydownloads/archive.tar.bz2
+   tar -vxzf /mnt/mydownloads/archive.tar.gz
+```
+
+See details on <http://logicassembly.com/linux/decompress_tar_dot_gz.htm?ext=bz2>
