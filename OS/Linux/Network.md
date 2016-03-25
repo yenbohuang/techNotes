@@ -35,3 +35,11 @@ See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring>
     sudo resolvconf -u
 
 See details on <http://www.lampnode.com/linux/howto-setup-nameserver-on-ubuntu-1404-by-resolvconf/>
+
+# Mounting network drive by samba
+
+    sudo mount -t cifs \
+      -o username=${name},password=${pwd},uid=${uid},gid=${gid} \
+      ${network path} ${local path}
+
+See details on <http://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown>
