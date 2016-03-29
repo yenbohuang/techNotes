@@ -87,3 +87,17 @@ Eclipse use the following in launch configuration:
   * "\cygdrive\d" -> "d:\"
 
 See details on <http://wyding.blogspot.tw/2009/04/setup-cygwin-toolchain-in-eclipse-cdt.html>
+
+# Java HL on Ubuntu
+
+The followings are the extra steps except install Java HL by Eclipse:
+
+* Run `sudo apt-get install libsvn-java`
+* Run `locate libsvnjava` and find the path.
+* Add the following line into eclipse.ini
+
+```
+    -Djava.library.path=/usr/lib/x86_64-linux-gnu/jni
+```
+
+See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
