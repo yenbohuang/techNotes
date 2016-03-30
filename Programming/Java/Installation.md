@@ -1,4 +1,4 @@
-# Install JDK on Linux
+# Install JDK on Ubuntu
 
 Do this in shell script:
 
@@ -21,3 +21,10 @@ If OpenJDK was installed already, replace it by the following commands:
     sudo update-alternatives --set "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac"
 
 TODO: need reference link!
+
+# Install JDK on CentOS
+
+* Download RPM file from Oracle website.
+* Run `sudo yum localinstall jre-8u60-linux-x64.rpm`
+
+See details on <https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora>
