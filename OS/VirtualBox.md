@@ -18,4 +18,11 @@ See details on <https://forums.virtualbox.org/viewtopic.php?t=15868>
 
     sudo apt-get install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
-See details on <http://askubuntu.com/questions/73589/higher-screen-resolution-for-virtualbox> 
+See details on <http://askubuntu.com/questions/73589/higher-screen-resolution-for-virtualbox>
+
+# Fix add on issue for CentOS 7
+
+Install the following packages before installing add on:
+
+    sudo yum install kernel-devel
+    sudo yum install gcc
