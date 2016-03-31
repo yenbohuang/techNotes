@@ -13,3 +13,11 @@ If the proxy server requires a username and password, add these to the URL. To i
     export http_proxy
 
 See details on <https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html> 
+
+# Useful commands
+
+```
+    yum list installed
+    yum search ***
+    yum localinstall *.rpm
+```
