@@ -18,6 +18,13 @@ Version controls
 Others
 * Find bugs <https://marketplace.eclipse.org/content/findbugs-eclipse-plugin>
 
+# Short-Cuts
+
+* Finding Java classes: "Ctrl + Shift + T"
+
+See details on:
+* <http://www.mkyong.com/eclipse/how-to-find-java-class-in-eclipse/>.
+
 # Setting
 
 ## Intelli-sense
@@ -59,7 +66,9 @@ See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-
 See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
 
 
-# Using local SVN repo
+# Subversion
+
+## Using local SVN repo
 
 * Install SVN command-line tool
 * Create folder 'd:\svn-repo'
@@ -67,6 +76,20 @@ See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
 * Use URL 'file:///d:/svn-repo/myproject'
 
 See details on <http://www.jayway.com/2009/04/03/setting-up-a-local-subversion-repository-to-use-with-your-eclipse/>
+
+## Java HL on Ubuntu
+
+The followings are the extra steps except install Java HL by Eclipse:
+
+* Run `sudo apt-get install libsvn-java`
+* Run `locate libsvnjava` and find the path.
+* Add the following line into eclipse.ini
+
+```
+    -Djava.library.path=/usr/lib/x86_64-linux-gnu/jni
+```
+
+See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
 
 # Using Tomcat in Eclipse
 
@@ -87,17 +110,3 @@ Eclipse use the following in launch configuration:
   * "\cygdrive\d" -> "d:\"
 
 See details on <http://wyding.blogspot.tw/2009/04/setup-cygwin-toolchain-in-eclipse-cdt.html>
-
-# Java HL on Ubuntu
-
-The followings are the extra steps except install Java HL by Eclipse:
-
-* Run `sudo apt-get install libsvn-java`
-* Run `locate libsvnjava` and find the path.
-* Add the following line into eclipse.ini
-
-```
-    -Djava.library.path=/usr/lib/x86_64-linux-gnu/jni
-```
-
-See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
