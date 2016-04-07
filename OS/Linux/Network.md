@@ -12,13 +12,20 @@ See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise
 
 # Enable SSH server
 
+## Ubuntu
     sudo apt-get install openssh-server 
     sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
     sudo chmod a-w /etc/ssh/sshd_config.factory-defaults
     sudo gedit /etc/ssh/sshd_config
     sudo restart ssh
 
-See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring> 
+See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring>
+
+## CentOS
+
+    sudo service sshd start
+
+See details on <https://lecturesnippets.com/lesson/setting-up-ssh-server-in-centos-7-minimal-install/>
 
 # /etc/resolv.conf
 
@@ -53,3 +60,10 @@ See details on <http://unix.stackexchange.com/questions/68079/mount-cifs-network
 * Reboot
 
 See details on <http://serverfault.com/questions/715369/centos-virtualbox-no-icfg-eth1-when-adding-secondary-network-interface>
+
+# Enable screen sharing on CentOS
+
+* Enable by "Setting -> System -> Sharing -> Screen Sharing"
+* Run `gsettings set org.gnome.Vino require-encryption false`. "sudo" is not needed.
+
+See details on <http://unix.stackexchange.com/questions/77885/how-can-i-connect-to-gnome-3-with-a-windows-vnc-client>
