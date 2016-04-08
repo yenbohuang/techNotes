@@ -20,7 +20,10 @@ Others
 
 # Short-Cuts
 
+Preferences -> General -> Keys:
+
 * Finding Java classes: "Ctrl + Shift + T"
+* Go to line number: "Ctrl + L"
 
 See details on:
 * <http://www.mkyong.com/eclipse/how-to-find-java-class-in-eclipse/>.
