@@ -67,3 +67,12 @@ See details on <http://serverfault.com/questions/715369/centos-virtualbox-no-icf
 * Run `gsettings set org.gnome.Vino require-encryption false`. "sudo" is not needed.
 
 See details on <http://unix.stackexchange.com/questions/77885/how-can-i-connect-to-gnome-3-with-a-windows-vnc-client>
+
+# SCP
+
+```
+   scp SourceFile user@host:directory/TargetFile
+   scp user@host:directory/SourceFile TargetFile
+```
+
+See details on <http://webdev.gmu.edu/uploading-files-with-secure-copy-scp/>.
