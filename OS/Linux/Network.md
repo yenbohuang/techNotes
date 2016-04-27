@@ -76,3 +76,21 @@ See details on <http://unix.stackexchange.com/questions/77885/how-can-i-connect-
 ```
 
 See details on <http://webdev.gmu.edu/uploading-files-with-secure-copy-scp/>.
+
+# Firewall settings
+
+## CentOS
+
+Configure the Firewall Using the Command Line:
+
+```
+    sudo lokkit --port=123:udp --update
+```
+
+Checking Network Access for Incoming NTP Using the Command Line
+
+```
+    sudo less /etc/sysconfig/system-config-firewall
+```
+
+See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-Configure_the_Firewall_Using_the_CLI.html>.
