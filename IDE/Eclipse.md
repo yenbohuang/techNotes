@@ -68,6 +68,14 @@ See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-
     
 See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
 
+## Workaround KDE GTK3 incompatible issues
+
+Add these 2 lines before the line "--launcher.appendVmargs":
+
+    --launcher.GTK_version
+    2
+
+See details on <https://bbs.archlinux.org/viewtopic.php?id=200053>
 
 # Subversion
 
