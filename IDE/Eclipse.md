@@ -64,7 +64,10 @@ See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-
 
 ## -vm
 
-    -vm /opt/sun-jdk-1.6.0.02/bin/java
+OpenJDK is usually pre-installed in Linux distributions (e.g. Ubuntu, CentOS.) If we'd like to use Oracle JDK for running Eclipse, we have to provide the JDK path in `eclipse.ini`:
+
+    -vm
+    /opt/sun-jdk-1.6.0.02/bin/java
     
 See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
 
