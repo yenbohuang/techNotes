@@ -21,3 +21,10 @@ See details on <https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html>
     yum search ***
     yum localinstall *.rpm
 ```
+
+# Install `locate` command
+
+    sudo yum install mlocate
+    sudo updatedb
+
+See details on <http://askubuntu.com/questions/215503/how-to-install-the-locate-command>
