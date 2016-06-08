@@ -27,6 +27,15 @@ See details on:
 
 See details on <http://www.thegeekstuff.com/2010/09/change-timezone-in-linux/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheGeekStuff+%28The+Geek+Stuff%29>
 
+## Generate UUID
+
+    uuidgen
+
+## Calculate MD5
+
+    md5sum <filename>
+    echo <string> | md5sum
+
 # Logging
 
 ## Out message on both console and log file
