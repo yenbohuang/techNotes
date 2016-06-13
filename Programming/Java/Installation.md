@@ -25,6 +25,8 @@ TODO: need reference link!
 # Install JDK on CentOS
 
 * Download RPM file from Oracle website.
-* Run `sudo yum localinstall jre-8u60-linux-x64.rpm`
+* Remove OpenJDK by `sudo yum erase ****`
+* Run `sudo rpm -ivh jdk-8u91-linux-x64.rpm`
+* Run `rpm -q --whatprovides java` and see if "alternatives" is set correctly.
 
-See details on <https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora>
+See details on <http://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html>
