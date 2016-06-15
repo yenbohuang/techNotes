@@ -105,6 +105,15 @@ The followings are the extra steps except install Java HL by Eclipse:
 
 See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
 
+# Git
+
+## Add toolbar
+
+* Click at "Menu Bar -> Window -> Perspective -> Customize Perstive"
+* Check "Git" under "Action Set Availability"
+
+See details on <http://www.vogella.com/tutorials/EclipseGit/article.html#egitconfiguration_toolbar>
+
 # Using Tomcat in Eclipse
 
 Eclipse use the following in launch configuration:
