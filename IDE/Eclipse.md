@@ -133,3 +133,16 @@ Eclipse use the following in launch configuration:
   * "\cygdrive\d" -> "d:\"
 
 See details on <http://wyding.blogspot.tw/2009/04/setup-cygwin-toolchain-in-eclipse-cdt.html>
+
+# Creating linked resources
+
+Create folder shortcut without creating projects:
+
+* Create a non-Java project.
+* Right click and choose "New -> Folder".
+* Enter folder name and expend "Advanced" button.
+* Choose "Link to alternate location (Linked Folder)" and click "Browse" button.
+
+Version control function cannot be done on linked resources; do it by command-line utilities instead.
+
+See details on <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-45.htm>
