@@ -36,6 +36,15 @@ See details on <http://www.thegeekstuff.com/2010/09/change-timezone-in-linux/?ut
     md5sum <filename>
     echo <string> | md5sum
 
+## Finding files
+
+    locate <filename>
+    find <path> -name <filename>
+    which <filename>
+    whereis <filename>
+
+See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-managing-locating.html>
+
 # Logging
 
 ## Out message on both console and log file
