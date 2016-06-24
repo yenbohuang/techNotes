@@ -46,3 +46,8 @@ See details on <https://docs.docker.com/engine/tutorials/usingdocker/>
 
 See details on <https://docs.docker.com/engine/tutorials/networkingcontainers/>
 
+# Stop a running container
+
+    docker stop <container name>
+
+See details on <https://docs.docker.com/engine/tutorials/usingdocker/>
