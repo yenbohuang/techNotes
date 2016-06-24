@@ -28,7 +28,7 @@ See details on <https://docs.docker.com/engine/tutorials/dockerizing/>
 
 See details on <https://docs.docker.com/engine/tutorials/dockerizing/>
 
-# List running process in a contailer
+# List running process in a container
 
     docker top <container name>
 
@@ -40,9 +40,9 @@ See details on <https://docs.docker.com/engine/tutorials/usingdocker/>
 
 See details on <https://docs.docker.com/engine/tutorials/usingdocker/>
 
-# Open a shell in runnint container
+# Open a shell in running container
 
     docker exec -it <container name> /bin/sh
 
-See deatils on <https://docs.docker.com/engine/tutorials/networkingcontainers/>
+See details on <https://docs.docker.com/engine/tutorials/networkingcontainers/>
 
