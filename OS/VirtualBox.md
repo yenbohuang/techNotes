@@ -27,7 +27,19 @@ Install the following packages before installing add on:
     sudo yum install kernel-devel
     sudo yum install gcc
 
-# Cannot use host-only adapter after VirtualBox update
+# Host-only adapter
+
+## Enable VirtualBox host-only adapter in CentOS
+
+* Add a new host-only adapter in VirtualBox
+* Enter `/etc/sysconfig/network-scripts`
+* Copy `ifcfg-eth0` to `ifcfg-eth1`
+* Edit `ifcfg-eth1`
+* Reboot
+
+See details on <http://serverfault.com/questions/715369/centos-virtualbox-no-icfg-eth1-when-adding-secondary-network-interface>
+
+## Cannot use host-only adapter after VirtualBox update
 
 Delete/re-add "VirtualBox Host-Only Ethernet Adapter":
 

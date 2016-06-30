@@ -51,16 +51,6 @@ See details on <http://www.lampnode.com/linux/howto-setup-nameserver-on-ubuntu-1
 
 See details on <http://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown>
 
-# Enable VirtualBox host-only adapter in CentOS
-
-* Add a new host-only adapter in VirtualBox
-* Enter `/etc/sysconfig/network-scripts`
-* Copy `ifcfg-eth0` to `ifcfg-eth1`
-* Edit `ifcfg-eth1`
-* Reboot
-
-See details on <http://serverfault.com/questions/715369/centos-virtualbox-no-icfg-eth1-when-adding-secondary-network-interface>
-
 # Enable screen sharing on CentOS
 
 * Enable by "Setting -> System -> Sharing -> Screen Sharing"
