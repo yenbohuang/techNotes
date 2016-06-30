@@ -45,15 +45,12 @@ Delete/re-add "VirtualBox Host-Only Ethernet Adapter":
 
 * File -> Preferences -> Network -> Host-only Networks
 * Edit details
-* For "Adapter" tab
-
-    IPv4 Address: 192.168.56.1
-    IPv4 Network Mask: 255.255.255.0
-
-* For "DHCP Server" tab
-
-    Enable Server: checked
-    Server Address: 192.168.56.100
-    Server Mask: 255.255.255.0
-    Lower Address Bound: 192.168.56.101
-    Upper Address Bound: 192.168.56.254
+  * For "Adapter" tab
+    * IPv4 Address: 192.168.56.1
+    * IPv4 Network Mask: 255.255.255.0
+  * For "DHCP Server" tab
+    * Enable Server: checked
+    * Server Address: 192.168.56.100
+    * Server Mask: 255.255.255.0
+    * Lower Address Bound: 192.168.56.101
+    * Upper Address Bound: 192.168.56.254
