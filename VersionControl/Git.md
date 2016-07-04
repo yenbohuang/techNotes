@@ -124,3 +124,40 @@ Add a remote for your local git that references upstream:
 Push "master" branch to "origin" server:
 
     $ git push origin master
+
+# Branches
+
+## Easier by EGit
+
+### Create/switch branch
+
+Create a branch:
+
+    $ git branch <branch name>
+
+Switch to a branch:
+
+    $ git checkout <branch name>
+
+Create and switch to a branch
+
+    $ git checkout -b <branch name>
+
+## Easier by command-line
+
+### Merge changes
+
+Merge branch back to master:
+
+    $ git checkout master
+    $ git merge <branch name>
+
+Update master to branch:
+
+    $ git checkout <branch name>
+    $ git merge master
+
+### Delete branch
+
+    # git branch -d <branch name>
+
