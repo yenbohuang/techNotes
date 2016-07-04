@@ -51,3 +51,17 @@ See details on <https://docs.docker.com/engine/tutorials/networkingcontainers/>
     docker stop <container name>
 
 See details on <https://docs.docker.com/engine/tutorials/usingdocker/>
+
+# Clean up local environments
+
+## Kill all running containers
+
+    docker kill $(docker ps -aq)
+
+## Delete all containers
+
+    docker rm $(docker ps -aq)
+
+## Delete all images
+
+    docker rmi -f $(docker images -aq)
