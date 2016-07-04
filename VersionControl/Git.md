@@ -3,28 +3,33 @@
 * Pro Git <https://git-scm.com/book/en/v2>
 * Eclipse EGit <https://wiki.eclipse.org/EGit/User_Guide>
 
+For titles with labels:
+
+* (EGit): It means that it is easier by using EGit.
+* (CMD): It means that it is easier by using command-line.
+
 # Config
 
 Configurations are set in `~/.gitconfig`.
 
-## Set username and email
+## (CMD) Set username and email
 
     $ git config --global user.name "John Doe"
     $ git config --global user.email johndoe@example.com
 
-## List settings
+## (CMD) List settings
 
     $ git config --list
 
 # Project
 
-## Clone a project
+## (CMD) Clone a project
 
     $ git clone https://github.com/libgit2/libgit2
 
 # Files
 
-## Showing file status and current branch name
+## (EGit) Showing file status and current branch name
 
 Show complete details:
 
@@ -34,16 +39,15 @@ Show simple status:
 
     $ git status -s
 
-## Add a file or directory
+## (EGit) Add a file or directory
 
     $ git add <file or directory>
 
-## Remove a file or directory
+## (CMD) Remove a file or directory
 
     $ git rm <file or directory>
 
-If you modified the file and added it to the index already, you must force the removal
-with the -f option:
+If you modified the file and added it to the index already, you must force the removal with the -f option:
 
     $ git rm -f <file or directory>
 
@@ -51,15 +55,15 @@ Keep the file in your working tree  but  remove  it  from  your  staging  area:
 
     $ git rm --cached <file or directory>
 
-## Rename a file
+## (EGit) Rename a file
 
     $ git mv <old file name> <new file name>
 
-## Revert changes in working directory
+## (EGit) Revert changes in working directory
 
     $ git checkout -- <file>
 
-## Commit changes
+## (EGit) Commit changes
 
 Commit files (no need to use `git add`) with message:
 
@@ -77,31 +81,32 @@ Change commit message or add forgotten files:
 
     $ git commit --amend
 
-## Unstage a file
+## (CMD) Unstage a file
 
     $ git reset HEAD <file>
 
 # Remote
 
-## Showing remote information
+## (EGit) Showing remote information
 
     $ git remote -v
+    $ git remote show <remote name>
 
-##  Add a new remote Git repository
+## (CMD) Add a new remote Git repository
 
-Add a new remote Git repository as a short name:
+Add a new remote Git repository as a remote name:
 
-    $ git remote add <short name> <url>
+    $ git remote add <remote name> <url>
 
 Add a remote for your local git that references upstream:
 
     $ git remote add upstream <url>
 
-## Get data from remote and (try to) merge into working directory
+## (CMD) Get data from remote and (try to) merge into working directory
 
     $ git pull
 
-## Push changes to remote
+## (CMD) Push changes to remote
  
     $ git push <remote name> <branch name>
 
