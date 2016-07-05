@@ -3,6 +3,18 @@
 * Pro Git <https://git-scm.com/book/en/v2>
 * Eclipse EGit <https://wiki.eclipse.org/EGit/User_Guide>
 
+# Terminology
+
+* master
+  * The default name for a starting branch when you run git init.
+* origin
+  * The default name for a remote when you run git clone. 
+* Tracking branch
+  * Checking out a local branch from a remote-tracking branch automatically creates what is called a ¡§tracking branch¡¨.
+  * Tracking branches are local branches that have a direct relationship to a remote branch.
+* Upstream branch
+  * The tracking branch it tracks is called an ¡§upstream branch¡¨.
+
 # Config
 
 Configurations are set in `~/.gitconfig`.
@@ -142,6 +154,16 @@ Switch to a branch:
 Create and switch to a branch
 
     $ git checkout -b <branch name>
+
+### Push branch
+
+Push a branch to remote:
+
+    $ git push <remote name> <branch name>
+
+Push a branch to where you pulled it:
+
+    $ git push origin <branch name>
 
 ## Easier by command-line
 
