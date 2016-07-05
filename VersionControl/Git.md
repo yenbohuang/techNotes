@@ -9,11 +9,10 @@
   * The default name for a starting branch when you run git init.
 * origin
   * The default name for a remote when you run git clone. 
-* Tracking branch
-  * Checking out a local branch from a remote-tracking branch automatically creates what is called a ¡§tracking branch¡¨.
+* Tracking branch and upstream branch
+  * Checking out a local branch from a remote-tracking branch automatically creates what is called a "tracking branch".
+  * And, the branch it tracks is called an "upstream branch".
   * Tracking branches are local branches that have a direct relationship to a remote branch.
-* Upstream branch
-  * The tracking branch it tracks is called an ¡§upstream branch¡¨.
 
 # Config
 
@@ -164,6 +163,10 @@ Push a branch to remote:
 Push a branch to where you pulled it:
 
     $ git push origin <branch name>
+
+### See what tracking branches you have set up
+
+    $ git branch -vv
 
 ## Easier by command-line
 
