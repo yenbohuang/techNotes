@@ -6,7 +6,12 @@ See details on <http://askubuntu.com/questions/67925/how-to-create-a-desktop-sho
 
 # Install desktop to console-only image
 
-Install desktop package.
+Install minimal required packages:
+
+    sudo yum groupinstall "X Window System"
+    sudo yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts
+
+Or, install full desktop packages:
 
     sudo yum groups install "GNOME Desktop"
 
@@ -34,3 +39,5 @@ Install VirtualBox addon. If this process failed due to missing packages, instal
     sudo yum install gcc
 
 Restart VM. 
+
+See <https://www.centos.org/forums/viewtopic.php?t=47088> for details.
