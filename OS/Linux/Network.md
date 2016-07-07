@@ -51,13 +51,6 @@ See details on <http://www.lampnode.com/linux/howto-setup-nameserver-on-ubuntu-1
 
 See details on <http://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown>
 
-# Enable screen sharing on CentOS
-
-* Enable by "Setting -> System -> Sharing -> Screen Sharing"
-* Run `gsettings set org.gnome.Vino require-encryption false`. "sudo" is not needed.
-
-See details on <http://unix.stackexchange.com/questions/77885/how-can-i-connect-to-gnome-3-with-a-windows-vnc-client>
-
 # SCP
 
 ```

@@ -1,3 +1,7 @@
+# Check Ubuntu version
+
+    lsb_release -a
+
 # Using Gnome
 	
 * Install Gnome

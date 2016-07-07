@@ -16,12 +16,10 @@ See details on <https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html>
 
 # Useful commands
 
-```
     yum list installed
     yum search ***
     yum localinstall *.rpm
     yum erase ***
-```
 
 # Install `locate` command
 

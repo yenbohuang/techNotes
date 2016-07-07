@@ -41,3 +41,10 @@ Install VirtualBox addon. If this process failed due to missing packages, instal
 Restart VM. 
 
 See <https://www.centos.org/forums/viewtopic.php?t=47088> for details.
+
+# Enable screen sharing on CentOS
+
+* Enable by "Setting -> System -> Sharing -> Screen Sharing"
+* Run `gsettings set org.gnome.Vino require-encryption false`. "sudo" is not needed.
+
+See details on <http://unix.stackexchange.com/questions/77885/how-can-i-connect-to-gnome-3-with-a-windows-vnc-client>
