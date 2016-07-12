@@ -13,3 +13,9 @@ See details on <http://stackoverflow.com/questions/7737710/maven-plugin-not-usin
 Use this plug for submit/monitor Hudson/Jenkins builds.
 
 <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
+
+# Installing m2e plugins
+
+Install m2e plugins by "Preferences -> Maven -> Discovery -> Open Catalog".
+
+See details on <http://stackoverflow.com/questions/8360131/how-to-configure-checkstyle-in-eclipse-for-an-maven-project-automaticaly>
