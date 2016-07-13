@@ -2,6 +2,7 @@
 
 * Pro Git <https://git-scm.com/book/en/v2>
 * Eclipse EGit <https://wiki.eclipse.org/EGit/User_Guide>
+* Forking workflow <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>
 
 # Terminology
 
