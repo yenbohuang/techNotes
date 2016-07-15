@@ -146,3 +146,20 @@ Create folder shortcut without creating projects:
 Version control function cannot be done on linked resources; do it by command-line utilities instead.
 
 See details on <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-45.htm>
+
+
+# Compile Error for Scala + Java Projects
+
+Some projects contains both Scala and Java source codes. You will see this error if you didn't install m2e-scala and Scala IDE.
+
+    Plugin execution not covered by lifecycle configuration: net.alchim31.maven:scala-maven-plugin:3.2.1:add-source 
+    (execution: scala-compile-first, phase: process-resources)
+    Plugin execution not covered by lifecycle configuration: net.alchim31.maven:scala-maven-plugin:3.2.1:compile 
+    (execution: scala-compile-first, phase: process-resources)
+    Plugin execution not covered by lifecycle configuration: net.alchim31.maven:scala-maven-plugin:3.2.1:testCompile 
+    (execution: scala-test-compile, phase: process-test-resources)
+
+See details on:
+* Scala IDE getting started guide <http://scala-ide.org/docs/current-user-doc/gettingstarted/index.html>
+* Scala IDE on Eclipse marketplace<http://marketplace.eclipse.org/content/scala-ide>
+* m2e-scala plugin update link <http://alchim31.free.fr/m2e-scala/update-site/>
