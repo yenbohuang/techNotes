@@ -161,5 +161,5 @@ Some projects contains both Scala and Java source codes. You will see this error
 
 See details on:
 * Scala IDE getting started guide <http://scala-ide.org/docs/current-user-doc/gettingstarted/index.html>
-* Scala IDE on Eclipse marketplace<http://marketplace.eclipse.org/content/scala-ide>
+* Scala IDE on Eclipse marketplace <http://marketplace.eclipse.org/content/scala-ide>
 * m2e-scala plugin update link <http://alchim31.free.fr/m2e-scala/update-site/>
