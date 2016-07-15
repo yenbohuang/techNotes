@@ -159,6 +159,8 @@ Some projects contains both Scala and Java source codes. You will see this error
     Plugin execution not covered by lifecycle configuration: net.alchim31.maven:scala-maven-plugin:3.2.1:testCompile 
     (execution: scala-test-compile, phase: process-test-resources)
 
+Remember changing compiler target to "jvm-1.8": Window -> Preferences -> Scala -> Compiler -> Standard -> target drop down list.
+
 See details on:
 * Scala IDE getting started guide <http://scala-ide.org/docs/current-user-doc/gettingstarted/index.html>
 * Scala IDE on Eclipse marketplace <http://marketplace.eclipse.org/content/scala-ide>
