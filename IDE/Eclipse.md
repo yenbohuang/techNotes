@@ -147,8 +147,9 @@ Version control function cannot be done on linked resources; do it by command-li
 
 See details on <http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-45.htm>
 
+# Scala
 
-# Compile Error for Scala + Java Projects
+## Compile Error for Scala + Java Projects
 
 Some projects contains both Scala and Java source codes. You will see this error if you didn't install m2e-scala and Scala IDE.
 
@@ -165,3 +166,14 @@ See details on:
 * Scala IDE getting started guide <http://scala-ide.org/docs/current-user-doc/gettingstarted/index.html>
 * Scala IDE on Eclipse marketplace <http://marketplace.eclipse.org/content/scala-ide>
 * m2e-scala plugin update link <http://alchim31.free.fr/m2e-scala/update-site/>
+
+## Install sbteclipse
+
+* Follow instructions and install sbt <http://www.scala-sbt.org/release/docs/Manual-Installation.html>
+* Run `sbt`. It takes a long while for downloading sbt environment.
+* Exit sbt session by `exit` sbt command.
+* Follow instructions and add sbteclipse plugin <https://github.com/typesafehub/sbteclipse/wiki/Installing-sbteclipse>.
+  * Add sbteclipse to global plugin definition.
+* Run `sbt` and it starts downloading sbteclipse environment.
+* Run `eclipse` sbt command. It takes a long while downloading dependencies and create Eclipse project files.
+* Import existing project into Eclipse.
