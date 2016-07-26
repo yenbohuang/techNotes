@@ -3,11 +3,17 @@
     netsh firewall set service remotedesktop enable
     netsh firewall set service remoteadmin enable
 
-# Finding port in use
+# Network
+
+## Finding port in use
 
     netstat -a -b
 
 See details on <http://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows> 
+
+## Find hostname by IP address
+
+    nbtstat -a <IP address>
 
 # Lock screen by command line
 
