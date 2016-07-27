@@ -1,3 +1,12 @@
+# Docker + Consul + Swarm + Registrator + Nginx
+
+These blog posts (from part 1 to 4) introduce about how to use "Docker + Consul + Swarm + Registrator + Nginx" for blue-green deployment:
+
+* <https://technologyconversations.com/2015/07/02/scaling-to-infinity-with-docker-swarm-docker-compose-and-consul-part-14-a-taste-of-what-is-to-come/>
+* <https://technologyconversations.com/2015/07/02/scaling-to-infinity-with-docker-swarm-docker-compose-and-consul-part-24-manually-deploying-services/>
+* <https://technologyconversations.com/2015/07/02/scaling-to-infinity-with-docker-swarm-docker-compose-and-consul-part-34-blue-green-deployment-automation-and-self-healing-procedure/>
+* <https://technologyconversations.com/2015/07/02/scaling-to-infinity-with-docker-swarm-docker-compose-and-consul-part-44-scaling-individual-services/>
+
 # Verify docker installation
 
 See if this command works.
