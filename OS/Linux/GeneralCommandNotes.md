@@ -35,6 +35,12 @@ See details on <http://www.thegeekstuff.com/2010/09/change-timezone-in-linux/?ut
 
 See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-managing-locating.html>
 
+## Running sudo with environment variables
+
+    sudo <key1>=<value1> <key2>=<value2> .... <command>
+
+See details on <http://askubuntu.com/questions/57915/environment-variables-when-run-with-sudo>
+
 # Logging
 
 ## Out message on both console and log file
