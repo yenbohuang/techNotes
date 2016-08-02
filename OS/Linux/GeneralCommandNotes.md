@@ -41,6 +41,25 @@ See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise
 
 See details on <http://askubuntu.com/questions/57915/environment-variables-when-run-with-sudo>
 
+## Using systemd
+
+This is an example for docker daemon in `/etc/systemd/system/docker.service.d/override.conf`:
+
+    [Service]
+    Environment="CONSUL_HTTP_TOKEN=<ACL token>"
+    ExecStart=
+    ExecStart=/usr/bin/docker daemon --insecure-registry <url:port> -H fd:// -s overlay
+
+Run the following commands after changes:
+
+    #!/bin/sh
+    
+    sudo systemctl daemon-reload
+    sudo systemctl enable docker
+    sudo systemctl start docker
+
+See details on <https://www.freedesktop.org/software/systemd/man/systemd.service.html>
+
 # Logging
 
 ## Out message on both console and log file
