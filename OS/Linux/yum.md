@@ -27,3 +27,9 @@ See details on <https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html>
     sudo updatedb
 
 See details on <http://askubuntu.com/questions/215503/how-to-install-the-locate-command>
+
+# Update exclude package
+
+    yum update --exclude=PACKAGENAME
+
+See details on <https://access.redhat.com/solutions/10185>
