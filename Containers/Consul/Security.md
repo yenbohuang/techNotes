@@ -1,4 +1,4 @@
-# Blog posts
+# References
 
 * <https://www.mauras.ch/securing-consul.html>
 * <http://jovandeginste.github.io/2016/05/04/turning-on-acl-s-in-our-consul-cluster.html>
@@ -128,6 +128,25 @@ Use *"--env-file"* option of "docker run" command:
 We can also use *"-e"* option of "docker run" command:
 
     # docker run ... -e CONSUL_HTTP_TOKEN=<ACL token> ... consul://<Consul server IP>:8500
+
+### Setting Environment Variables by docker-compose
+
+* Define environment variable under "environment" section in "docker-compose.yml".
+
+    version: <version>
+    services:
+      
+      consul-server:
+      ...
+      
+      <service name>:
+      ...
+        command: ... consul://<host IP>:8500
+        environment:
+          - CONSUL_HTTP_TOKEN=<ACL token>
+        ...
+        depends_on: 
+          - consul-server
 
 ### Using ACL in Docker Daemon
 
