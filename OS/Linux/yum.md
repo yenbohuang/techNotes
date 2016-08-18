@@ -33,3 +33,10 @@ See details on <http://askubuntu.com/questions/215503/how-to-install-the-locate-
     yum update --exclude=PACKAGENAME
 
 See details on <https://access.redhat.com/solutions/10185>
+
+# Enable EPEL Repository
+
+    wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+    rpm -ivh epel-release-7-8.noarch.rpm
+
+See details on <http://www.tecmint.com/how-to-enable-epel-repository-for-rhel-centos-6-5/>
