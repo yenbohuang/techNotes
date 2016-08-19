@@ -77,3 +77,14 @@ Checking Network Access for Incoming NTP Using the Command Line
 ```
 
 See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-Configure_the_Firewall_Using_the_CLI.html>.
+
+# curl command
+
+## HTTP PUT
+
+    curl -v -X PUT -d <content> http://localhost/api/handler
+
+## Download file
+
+    curl http://localhost/somefile.zip > /tmp/myfile.zip
+
