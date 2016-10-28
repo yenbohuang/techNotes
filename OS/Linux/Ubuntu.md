@@ -2,13 +2,6 @@
 
     lsb_release -a
 
-# Using Gnome
-	
-* Install Gnome
-* Choose session when login
-
-See details on <http://askubuntu.com/questions/450294/how-to-switch-from-unity-to-gnome>
-
 # Environment variables
 
 Preferred
