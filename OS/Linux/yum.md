@@ -57,3 +57,17 @@ See details on <http://www.tecmint.com/how-to-enable-epel-repository-for-rhel-ce
     sudo yum install google-chrome-stable
 
 See details on <http://www.tecmint.com/install-google-chrome-on-redhat-centos-fedora-linux/>
+
+# Purge Old Kernels
+
+* Install `yum-utils`.
+
+    yum install yum-utils
+
+* Clean old kernels and only keep two latest kernels.
+
+    package-cleanup --oldkernels --count=2
+
+* To keep fewer kernels automatically edit `/etc/yum.conf` and change `installonly_limit=2`.
+
+See details on <https://www.centos.org/forums/viewtopic.php?t=2120>
