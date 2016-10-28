@@ -60,6 +60,22 @@ Run the following commands after changes:
 
 See details on <https://www.freedesktop.org/software/systemd/man/systemd.service.html>
 
+## Check Disk Usages
+
+* Shows the amount of disk space used and available on Linux file systems.
+
+    df
+
+* To list top 10 directories eating disk space.
+
+    du -a ~/ | sort -n -r | head -n 10
+
+* Display the amount of disk space used by the specified files and for each sub-directory.
+
+    du
+
+See details on <http://www.cyberciti.biz/faq/linux-check-disk-space-command/>
+
 # Logging
 
 ## Out message on both console and log file
