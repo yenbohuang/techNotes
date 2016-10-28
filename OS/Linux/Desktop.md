@@ -2,14 +2,14 @@
 
 ## Install Desktop Environments
 
-* Install your favorite desktop environment.
+Install your favorite desktop environment.
 
     yum groups install "GNOME Desktop"
     yum groups install "KDE Plasma Workspaces"
     yum --enablerepo=epel groups install "MATE Desktop"
     yum --enablerepo=epel groups install "Xfce"
 
-* Logout and choose the desktop environment by "options icon" before you login CentOS 7.
+Logout and choose the desktop environment by "options icon" before you login CentOS 7.
 
 See details on <http://unix.stackexchange.com/questions/181503/how-to-install-desktop-environments-on-centos-7>
 
