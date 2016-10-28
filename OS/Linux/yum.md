@@ -40,3 +40,20 @@ See details on <https://access.redhat.com/solutions/10185>
     rpm -ivh epel-release-7-8.noarch.rpm
 
 See details on <http://www.tecmint.com/how-to-enable-epel-repository-for-rhel-centos-6-5/>
+
+# Install Google Chrome
+
+* Create `/etc/yum.repos.d/google-chrome.repo` with the following content:
+
+    [google-chrome]
+    name=google-chrome
+    baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+
+* Install by yum
+
+    sudo yum install google-chrome-stable
+
+See details on <http://www.tecmint.com/install-google-chrome-on-redhat-centos-fedora-linux/>
