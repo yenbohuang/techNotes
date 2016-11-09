@@ -31,6 +31,20 @@ See details on <https://docs.docker.com/linux/step_three/>
 
 See details on <https://docs.docker.com/engine/tutorials/dockerizing/>
 
+## Display live status for docker containers
+
+    #!/bin/sh
+    while [ 1=1 ]
+    do
+     clear
+     docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Command}}\t{{.RunningFor}}\t{{.Status}}"
+     echo "Refereshed every 5 seconds....$(date)"
+     sleep 5
+    done
+
+
+See details on <https://docs.docker.com/engine/reference/commandline/ps/>
+
 # Display logs in a container
 
     docker logs -f <container name>
