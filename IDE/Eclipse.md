@@ -1,19 +1,29 @@
-# Useful plugins
+# Plugins
+## Useful plugins
+
+CI
+* Hudson/Jenkins Mylyn Builds Connector <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
 
 Editors
 * Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
 * Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
 * ShellEd <http://sourceforge.net/projects/shelled>. Note that you don't have to download it from sourceforge. Use "help-> Install New Software" and find "Dynamic Languages Toolkit - ShellEd".
+
+Version controls
+* EGit <http://marketplace.eclipse.org/content/egit-git-team-provider>
+
+## Optional plugins
+
+Editors
 * Eclipse CDT
-
-CI
-* Hudson/Jenkins Mylyn Builds Connector <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
-
-# Optional plugins
+* PyDev <http://marketplace.eclipse.org/content/pydev-python-ide-eclipse>
 
 Version controls
 * Subclipse <https://marketplace.eclipse.org/content/subclipse>
-* EGit <http://marketplace.eclipse.org/content/egit-git-team-provider>
+
+Testing
+* TestNG <http://testng.org/doc/eclipse.html>
+* EclEmma <http://www.eclemma.org/>
 
 Others
 * Find bugs <https://marketplace.eclipse.org/content/findbugs-eclipse-plugin>
