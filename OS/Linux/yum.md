@@ -36,6 +36,12 @@ See details on <https://access.redhat.com/solutions/10185>
 
 # Enable EPEL Repository
 
+This works on CentOS 7:
+
+    yum install epel-release
+
+If it doesn't work, do it manually:
+
     wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
     rpm -ivh epel-release-7-8.noarch.rpm
 
