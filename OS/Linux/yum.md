@@ -71,3 +71,9 @@ See details on <http://www.tecmint.com/install-google-chrome-on-redhat-centos-fe
 * To keep fewer kernels automatically edit `/etc/yum.conf` and change `installonly_limit=2`.
 
 See details on <https://www.centos.org/forums/viewtopic.php?t=2120>
+
+# Install Fonts
+
+    sudo yum groupinstall "Fonts"
+
+See details on <https://ask.fedoraproject.org/en/question/7032/how-do-i-install-fonts-in-fedora/>
