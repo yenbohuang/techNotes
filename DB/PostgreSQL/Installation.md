@@ -56,19 +56,22 @@
 
 Refer to detail document here: <https://help.ubuntu.com/community/PostgreSQL>
 
+## CentOS
+
+    $ sudo yum install postgresql-server
+    $ sudo postgresql-setup initdb
+    $ sudo service postgresql start
+    $ sudo chkconfig postgresql on
 
 # Create DB
 
 The following contents are copied from manual.
 
-````
     root# mkdir /usr/local/pgsql/data
     root# chown postgres /usr/local/pgsql/data
     root# su postgres
     postgres$ initdb -U yenbo -W -E UTF8 --lc-collate=en_US.UTF8 --lc-ctype=en_US.UTF8 -D /usr/local/pgsql/data
     postgres$pg_ctl start -l /usr/local/pgsql/logfile.log -D /usr/local/pgsql/data initdb
-````
-
 
 If you do not trust other local users, we recommend you use one of initdb’s `-W`, `--pwprompt` or `--pwfile` options to assign a password to the database superuser. Also, specify `-A md5` or `-A password` so that the default trust authentication mode is not used; or modify the generated `pg_hba.conf` ﬁle after running `initdb`, but before you start the server for the ﬁrst time.
 
@@ -86,9 +89,11 @@ The initial settings in `pg_hba.conf` are quite restrictive, in order to avoid u
 
 # Set password
 
-````
-    sudo -u postgres psql postgres
-    \password postgres
-````
+    $ sudo -u postgres psql postgres
+    # \password postgres
 
 See details on <https://help.ubuntu.com/community/PostgreSQL> 
+
+Or,
+
+    # alter user postgres password '???';
