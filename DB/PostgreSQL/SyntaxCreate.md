@@ -76,7 +76,7 @@ Since a DELETE of a row from the referenced table or an UPDATE of a referenced c
         schedule text[][]
     );
  
- # Database
+# Database
  
      CREATE DATABASE <DB name> OWNER <user>;
  

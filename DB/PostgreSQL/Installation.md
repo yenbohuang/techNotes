@@ -81,11 +81,15 @@ The initial settings in `pg_hba.conf` are quite restrictive, in order to avoid u
 
     host all all 192.168.0.0/24 md5 
 
-# Start/stop on Ubuntu
+# Start/stop DB
 
-````
+## Ubuntu
+
     /etc/init.d/postgresql start/stop
-````
+
+## CentOS
+
+    sudo service postgresql start/stop/restart
 
 # Set password
 

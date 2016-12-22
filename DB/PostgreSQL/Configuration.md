@@ -53,3 +53,8 @@
 
 * Edit configuration file under `"/etc/postgresql/<version>/main/pg_hba.conf"`
 * Reload configuration file `"sudo /etc/init.d/postgresql reload"`.
+
+### CentOS
+
+* Edit configuration file under `"/var/lib/pgsql/data/pg_hba.conf"`.
+* Restart server by `"sudo service postgresql restart"`
