@@ -177,11 +177,11 @@ Refer to this link for analysis properties and "sonar-project.properties":
     * Click at "Add build step", select "Execute SonarQube Scanner", and fill in the following information:
       * JDK: JDK 1.8
       * Analysis properties:
-
-
+```
     sonar.sources=<comma separated source code folder path>
     sonar.projectKey=<unique string for this project>
     sonar.sourceEncoding=UTF-8
+```
 
 #### By "sonar-project.properties"
 
