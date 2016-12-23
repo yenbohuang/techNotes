@@ -34,6 +34,7 @@
 ## SonarQube
 
 * <http://www.sonarqube.org/>
+* Architecture: <http://docs.sonarqube.org/display/SONAR/Architecture+and+Integration>
 * Plugins: <http://docs.sonarqube.org/display/PLUG/Plugin+Library>
 * Scanners: <http://docs.sonarqube.org/display/SCAN/Analyzing+Source+Code#AnalyzingSourceCode-RunningAnalysis>
 * Eclipse Plugin: <http://www.sonarlint.org/eclipse/index.html>
