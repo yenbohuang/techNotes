@@ -157,6 +157,7 @@ Refer to details:
   * In "Build Environment" section:
     * Check "Prepare SonarQube Scanner environment".
   * In "Build" section:
-    * Goals and options: This is a sample for non-production usage. `package $SONAR_MAVEN_GOAL -Dsonar.host.url=$SONAR_HOST_URL -DskipTests`
+    * Goals and options: `package $SONAR_MAVEN_GOAL -Dsonar.host.url=$SONAR_HOST_URL -DskipTests`
+      * This is a sample for non-production usage. 
 * After build configuration is created, click "Build Now".
 * After build is completed, click "SonarQube" and see code analysis report on SonarQube.
