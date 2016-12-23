@@ -161,3 +161,30 @@ Refer to details:
       * This is a sample for non-production usage. 
 * After build configuration is created, click "Build Now".
 * After build is completed, click "SonarQube" and see code analysis report on SonarQube.
+
+### Python Projects
+
+Refer to this link for analysis properties and "sonar-project.properties":
+* <http://docs.sonarqube.org/display/SONAR/Analysis+Parameters>
+* <http://docs.sonarqube.org/display/PLUG/Pylint+Report>
+
+#### By Build Configuration on Jenkins
+
+* Click at "New Item" and select "Freestyle Project".
+  * In "Build Environment" section:
+    * Check "Prepare SonarQube Scanner environment".
+  * In "Build" section:
+    * Click at "Add build step", select "Execute SonarQube Scanner", and fill in the following information:
+      * JDK: JDK 1.8
+      * Analysis properties:
+
+
+    sonar.sources=<comma separated source code folder path>
+    sonar.projectKey=<unique string for this project>
+    sonar.sourceEncoding=UTF-8
+
+#### By "sonar-project.properties"
+
+The procedure is the same as using "Analysis properties" in Jenkins build configuration except:
+* Keep "Analysis properties" blank.
+* Add the content in "Analysis properties" into "sonar-project.properties" and check in to project root folder.
