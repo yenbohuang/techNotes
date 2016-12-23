@@ -188,3 +188,41 @@ Refer to this link for analysis properties and "sonar-project.properties":
 The procedure is the same as using "Analysis properties" in Jenkins build configuration except:
 * Keep "Analysis properties" blank.
 * Add the content in "Analysis properties" into "sonar-project.properties" and check in to project root folder.
+
+# Using SonarQube in a Developer's Daily Life
+
+## IDE Plugins
+
+TBD
+<http://www.sonarlint.org/>
+
+## Command-Line Tool
+
+TBD
+<http://www.sonarlint.org/commandline/index.html>
+
+# Troubleshooting
+
+## SonarQube Related
+
+### Adjust SonarQube Log Level
+
+Add this property in "Analysis properties" or "sonar-project.properties". The supported log levels are DEBUG and TRACE.
+
+    sonar.log.level=DEBUG
+
+Refer to this link for other details:
+* <http://docs.sonarqube.org/display/SONAR/Analysis+Parameters>
+
+## Python Related
+
+### Pylint rule '?' is unknown in Sonar
+
+Pylint displays this log for deactivated rules and it is okay to ignore.
+You can search the rule number by search input box under SonarQube "Rules" tab. 
+
+    22:43:24 INFO: Sensor org.sonar.plugins.python.pylint.PylintSensor
+    22:43:29 WARN: Pylint rule 'W1401' is unknown in Sonar
+
+Refer to this link for other details:
+* <http://stackoverflow.com/questions/24455176/pylint-rule-is-unkown-to-sonar>
