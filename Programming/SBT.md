@@ -132,3 +132,55 @@ See details on the following links:
 * <https://github.com/twitter/cassie/issues/13>
 * <https://groups.google.com/forum/#!topic/akka-dev/1gltGQHEwoE>
 * <https://github.com/CSUG/sbt-one-log/issues/9>
+
+# Static code analysis related
+
+## Cannot Run FindBugs: This project contains Java source files that are not compiled
+
+FindBugs requires more information when applying on SBT projects. For example, it has to know where the compiled classes are.
+
+    01:34:50 ERROR: Error during SonarQube Scanner execution
+    01:34:50 java.lang.IllegalStateException: Can not execute Findbugs
+    01:34:50        at org.sonar.plugins.findbugs.FindbugsExecutor.execute(FindbugsExecutor.java:169)
+    ...
+    01:34:50 Caused by: java.lang.IllegalStateException: This project contains Java source files that are not compiled.
+    01:34:50        at org.sonar.plugins.findbugs.FindbugsConfiguration.getFindbugsProject(FindbugsConfiguration.java:120)
+    01:34:50        at org.sonar.plugins.findbugs.FindbugsExecutor.execute(FindbugsExecutor.java:119)
+    01:34:50        ... 31 more
+
+This can be fixed by adding `"sonar.java.binaries"` property:
+
+    sonar.java.binaries=project1/target/classes,project2/target/classes
+
+Remember excluding folders which don't include Java source files. Or, you will see this error message:
+
+    01:03:57 ERROR: Error during SonarQube Scanner execution
+    01:03:57 java.lang.IllegalStateException: No files nor directories matching 'project3/target/classes'
+
+Refer to this link for other details:
+* <http://stackoverflow.com/questions/39102924/can-not-execute-findbugs-caused-by-this-project-contains-java-source-files-that>
+
+## Bytecode of dependencies was not provided
+
+SonarQube requires more steps for knowing where the dependencies are for SBT projects.
+
+    01:09:38 WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+
+Here are options to fix it:
+* Use Maven since SonarQube provides Maven plugin.
+* Populate `"sonar.java.libraries"` property.
+
+## sbt-scapegoat not found with SBT 1.0.0-M4
+
+If you build sbt projects such as tsds with SBT 1.0.0-M4, you will see some dependencies cannot be resolved.
+
+    03:10:22 [warn]         Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.
+    03:10:22 [warn]                 com.typesafe.sbt:sbt-site:1.0.0 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 com.etsy:sbt-checkstyle-plugin:3.0.0 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 de.johoop:sbt-testng-plugin:3.0.2 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 net.virtual-void:sbt-dependency-graph:0.8.2 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 com.sksamuel.scapegoat:sbt-scapegoat:1.0.4 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 org.scalastyle:scalastyle-sbt-plugin:0.8.0 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+    03:10:22 [warn]                 com.typesafe.sbteclipse:sbteclipse-plugin:4.0.0-RC2 (scalaVersion=2.11, sbtVersion=1.0.0-M4)
+
+Use SBT 0.13.12 for now.
