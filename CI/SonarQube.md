@@ -145,7 +145,7 @@ Refer to details:
 Add Global Configurations
 * Open "Manage Jenkins -> Configure System"
 * In "OWASP Dependency-Check" section
-** Add "Global Data Directory": "/var/lib/jenkins/dependency-check-data"
+  * Add "Global Data Directory": "/var/lib/jenkins/dependency-check-data"
 
 Refer to details:
 * <https://wiki.jenkins-ci.org/display/JENKINS/OWASP+Dependency-Check+Plugin>

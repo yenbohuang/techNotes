@@ -39,7 +39,14 @@
 * Scanners: <http://docs.sonarqube.org/display/SCAN/Analyzing+Source+Code#AnalyzingSourceCode-RunningAnalysis>
 * Eclipse Plugin: <http://www.sonarlint.org/eclipse/index.html>
 
+## OWASP Dependency-Check
+
+* <https://www.owasp.org/index.php/OWASP_Dependency_Check>
+* <https://wiki.jenkins-ci.org/display/JENKINS/OWASP+Dependency-Check+Plugin>
+* <https://github.com/stevespringett/dependency-check-sonar-plugin>
+
 ## Others
+
 * <https://pmd.github.io/>
 * <https://www.cqse.eu/en/products/conqat/overview/>
 * <https://sable.github.io/soot/>
