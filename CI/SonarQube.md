@@ -74,10 +74,19 @@ Set admin's password
 
 Install Plugins from Update Center.
 
+Install OWASP Dependency Check Plugin:
+* Download JAR file from Github: https://github.com/stevespringett/dependency-check-sonar-plugin/releases
+* Copy JAR file to "/opt/sonar/extensions/plugins".
+* Change ownership to "sonar:sonar".
+* Restart SonarQube.
+* There are some compatibility issues with SonarQube 6.x for now, and the report cannot be displayed on SonarQube correctly.
+  * See details on: https://github.com/stevespringett/dependency-check-sonar-plugin/issues/23
+
 Refer to details on:
 * <http://docs.sonarqube.org/display/SONAR/Installing+the+Server#InstallingtheServer-installingWebServerInstallingtheWebServer>
 * <http://sonar-pkg.sourceforge.net/>
 * <http://docs.sonarqube.org/display/PLUG/Plugin+Library>
+* <https://github.com/stevespringett/dependency-check-sonar-plugin>
 
 ## Install Jenkins
 
@@ -99,9 +108,11 @@ Install plugins by "Manage Jenkins > Manage Plugins":
 Refer to details:
 * <https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions>
 
-## Install SonarQube Plugin on Jenkins
+## Install Plugins on Jenkins
 
-Install plugins by "Manage Jenkins -> Manage Plugins".
+Most of the plugins can be installed by "Manage Jenkins -> Manage Plugins".
+
+### SonarQube Plugin for Jenkins
 
 Adding SonarQube Server
 * Open "Manage Jenkins > Configure System".
@@ -128,6 +139,16 @@ Adding SonarQube Scanner
 
 Refer to details:
 * <http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Jenkins>
+
+### OWASP Dependency-Check Plugin for Jenkins
+
+Add Global Configurations
+* Open "Manage Jenkins -> Configure System"
+* In "OWASP Dependency-Check" section
+** Add "Global Data Directory": "/var/lib/jenkins/dependency-check-data"
+
+Refer to details:
+* <https://wiki.jenkins-ci.org/display/JENKINS/OWASP+Dependency-Check+Plugin>
 
 ## Create SonarQube Quality Profile
 
@@ -156,11 +177,15 @@ Refer to details:
 * Click "New Item" and select "Maven Project".
   * In "Build Environment" section:
     * Check "Prepare SonarQube Scanner environment".
+  * In "Pre Steps" section:
+    * Click "Add pre-build step" and select "Invoke OWASP Dependency-Check Analysis".
+      * Check "Generate optional HTML reports".
   * In "Build" section:
-    * Goals and options: `package $SONAR_MAVEN_GOAL -Dsonar.host.url=$SONAR_HOST_URL -DskipTests`
+    * Goals and options: `package $SONAR_MAVEN_GOAL -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.dependencyCheck.reportPath=${WORKSPACE}/dependency-check-report.xml -DskipTests`
       * This is a sample for non-production usage. 
 * After build configuration is created, click "Build Now".
 * After build is completed, click "SonarQube" and see code analysis report on SonarQube.
+* Dependency-check reports are generated under workspace folder.
 
 ### Python Projects
 
@@ -174,6 +199,8 @@ Refer to this link for analysis properties and "sonar-project.properties":
   * In "Build Environment" section:
     * Check "Prepare SonarQube Scanner environment".
   * In "Build" section:
+    * Click "Add build step" and select "Invoke OWASP Dependency-Check Analysis".
+      * Check "Generate optional HTML reports".
     * Click at "Add build step", select "Execute SonarQube Scanner", and fill in the following information:
       * JDK: JDK 1.8
       * Analysis properties:
@@ -181,6 +208,7 @@ Refer to this link for analysis properties and "sonar-project.properties":
     sonar.sources=<comma separated source code folder path>
     sonar.projectKey=<unique string for this project>
     sonar.sourceEncoding=UTF-8
+    sonar.dependencyCheck.reportPath=${WORKSPACE}/dependency-check-report.xml
 ```
 
 #### By "sonar-project.properties"
@@ -213,6 +241,13 @@ Add this property in "Analysis properties" or "sonar-project.properties". The su
 
 Refer to this link for other details:
 * <http://docs.sonarqube.org/display/SONAR/Analysis+Parameters>
+
+### Dependency-Check report is empty
+
+There are some compatibility issues with SonarQube 6.x for now, and the report cannot be displayed on SonarQube correctly.
+
+Refer to this link for other details:
+* <https://github.com/stevespringett/dependency-check-sonar-plugin/issues/23>
 
 ## Python Related
 
