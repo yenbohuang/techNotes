@@ -12,3 +12,13 @@
 See details on:
 * <https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins>
 * <https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins>
+
+# Forgot password and cannot login
+
+* Edit `/var/lib/jenkins/config.xml`
+  * Change `<useSecurity>true</useSecurity>` to `false`
+* Restart Jenkins: `sudo service jenkins restart`
+* Make changes in "Configure Global Security".
+
+See details on:
+* <http://stackoverflow.com/questions/15227305/what-is-the-default-jenkins-password>
