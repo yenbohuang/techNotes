@@ -10,9 +10,11 @@ See details on <http://www.rackspace.com/knowledge_center/article/how-do-i-modif
 
 See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Security_Guide/s1-server-ports.html>
 
-# Enable SSH server
+# SSH
 
-## Ubuntu
+## Enable SSH server
+
+### Ubuntu
     sudo apt-get install openssh-server 
     sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
     sudo chmod a-w /etc/ssh/sshd_config.factory-defaults
@@ -21,11 +23,23 @@ See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise
 
 See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring>
 
-## CentOS
+### CentOS
 
     sudo service sshd start
 
 See details on <https://lecturesnippets.com/lesson/setting-up-ssh-server-in-centos-7-minimal-install/>
+
+## Enable root login over SSH
+
+### CentOS
+
+* Open `/etc/ssh/sshd_config` and change:
+  * PermitRootLogin yes
+  * PasswordAuthentication yes
+* `sudo service sshd restart`
+
+See details on:
+* <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/V2V_Guide/Preperation_Before_the_P2V_Migration-Enable_Root_Login_over_SSH.html>
 
 # /etc/resolv.conf
 
@@ -88,3 +102,25 @@ See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise
 
     curl http://localhost/somefile.zip > /tmp/myfile.zip
 
+# Using fixed IP address
+
+## CentOS
+
+* Use `ifconfig` and know which NIC we are updating.
+* Open `/etc/sysconfig/network-scripts/ifcfg-???` and change:
+  * BOOTPROTO=none
+  * ONBOOT=yes
+  * DNS1=???
+  * DOMAIN=??
+  * IPADDR=??
+  * PREFIX=24
+  * GATEWAY=??
+* `sudo systemctl restart network`
+
+Or, use UI tool:
+
+`sudo nmtui`
+
+See details on:
+* <https://www.cyberciti.biz/faq/howto-setting-rhel7-centos-7-static-ip-configuration/>
+* <http://ask.xmodulo.com/configure-static-ip-address-centos7.html>
