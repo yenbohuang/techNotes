@@ -22,3 +22,12 @@ See details on:
 
 See details on:
 * <http://stackoverflow.com/questions/15227305/what-is-the-default-jenkins-password>
+
+# jenkins-inheritance-plugin
+
+## No such property: codeMirrorConfig for class: hudson.markup.EscapedMarkupFormatter
+
+Change "Mange Jenkins -> Configure Global Security -> Markup Formatter" to "Safe HTML"
+
+See details on:
+* <https://github.com/i-m-c/jenkins-inheritance-plugin/issues/19>
