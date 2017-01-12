@@ -142,13 +142,33 @@ Refer to details:
 
 ### OWASP Dependency-Check Plugin for Jenkins
 
-Add Global Configurations
+#### Add Global Configurations
+
 * Open "Manage Jenkins -> Configure System"
 * In "OWASP Dependency-Check" section
   * Add "Global Data Directory": "/var/lib/jenkins/dependency-check-data"
+  * Uncheck "Enable QuickQuery".
 
 Refer to details:
 * <https://wiki.jenkins-ci.org/display/JENKINS/OWASP+Dependency-Check+Plugin>
+
+#### Add a Daily Job for Updating NVD
+
+* Create a freestyle project.
+* In "Build Triggers" section:
+  * Check "Build periodically".
+  * Set "Schedule" as "@daily".
+* In "Build" section:
+  * Click at "Add build step" and choose "Invoke OWASP Dependency-Check NVD update only".
+
+#### Add System Log
+
+* In "Manage Jenkins -> System Log":
+  * Click at "Add new log recorder".
+  * Assign a name for it, e.g., "org.owasp".
+  * Add loggers. For example,
+    * Logger = "org.owasp.dependencycheck.utils.Downloader"
+    * Log level = "ALL"
 
 ## Create SonarQube Quality Profile
 
@@ -180,12 +200,19 @@ Refer to details:
   * In "Pre Steps" section:
     * Click "Add pre-build step" and select "Invoke OWASP Dependency-Check Analysis".
       * Check "Generate optional HTML reports".
+      * Check "Disable NVD auto-update".
   * In "Build" section:
     * Goals and options: `package $SONAR_MAVEN_GOAL -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.dependencyCheck.reportPath=${WORKSPACE}/dependency-check-report.xml -DskipTests`
-      * This is a sample for non-production usage. 
+      * This is a sample for non-production usage.
+  * In "Post Steps" section:
+    * Click "Add post-build step" and select "Invoke OWASP Dependency-Check Analysis".
+      * Check "Disable NVD auto-update".
+      * Check "Generate optional HTML reports".
 * After build configuration is created, click "Build Now".
 * After build is completed, click "SonarQube" and see code analysis report on SonarQube.
 * Dependency-check reports are generated under workspace folder.
+
+<span style="color:red">TODO: Find out why dependency-check has to be added in both pre-steps and post-steps?</span>
 
 ### Python Projects
 
@@ -200,6 +227,7 @@ Refer to this link for analysis properties and "sonar-project.properties":
     * Check "Prepare SonarQube Scanner environment".
   * In "Build" section:
     * Click "Add build step" and select "Invoke OWASP Dependency-Check Analysis".
+      * Check "Disable NVD auto-update".
       * Check "Generate optional HTML reports".
     * Click at "Add build step", select "Execute SonarQube Scanner", and fill in the following information:
       * JDK: JDK 1.8
