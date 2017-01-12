@@ -212,7 +212,7 @@ Refer to details:
 * After build is completed, click "SonarQube" and see code analysis report on SonarQube.
 * Dependency-check reports are generated under workspace folder.
 
-<span style="color:red">TODO: Find out why dependency-check has to be added in both pre-steps and post-steps?</span>
+**TODO: Find out why dependency-check has to be added in both pre-steps and post-steps?**
 
 ### Python Projects
 
