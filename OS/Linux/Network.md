@@ -10,6 +10,12 @@ See details on <http://www.rackspace.com/knowledge_center/article/how-do-i-modif
 
 See details on <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Security_Guide/s1-server-ports.html>
 
+# List NAT port forwarding information
+
+    sudo iptables -t nat -L -n
+
+See details on <http://ipset.netfilter.org/iptables.man.html>
+
 # SSH
 
 ## Enable SSH server
