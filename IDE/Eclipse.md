@@ -115,15 +115,21 @@ The followings are the extra steps except install Java HL by Eclipse:
 
 See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
 
-# Subclipse
+## Subclipse
 
-## Enter username/password and frozen when "save password" is checked.
+### Enter username/password and frozen when "save password" is checked.
 
 Find `org.eclipse.core.runtime.compatibility.auth_3.2.300.v20120523-2004.jar` and put it in Eclipse/plugins.
 
 See details on <http://stackoverflow.com/questions/35744794/eclipse-mars-freezes-on-subclipse-password-store>
 
 JAR file can be download from here (or somewhere else): <http://ftp.gnome.org/mirror/eclipse.org/eclipse/updates/3.8/R-3.8.2-201301310800/plugins/>
+
+## Subversive
+
+### Comparing files from the commit dialog always yields a "no differences" result
+
+This is a bug and still waiting for the fix after Neon.2 (4.6.2). See details on <https://bugs.eclipse.org/bugs/show_bug.cgi?id=497160>
 
 # Git
 
