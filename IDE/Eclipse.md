@@ -115,6 +115,16 @@ The followings are the extra steps except install Java HL by Eclipse:
 
 See details on <http://stackoverflow.com/questions/3274890/javahl-not-loading-noclassdeferror>
 
+# Subclipse
+
+## Enter username/password and frozen when "save password" is checked.
+
+Find `org.eclipse.core.runtime.compatibility.auth_3.2.300.v20120523-2004.jar` and put it in Eclipse/plugins.
+
+See details on <http://stackoverflow.com/questions/35744794/eclipse-mars-freezes-on-subclipse-password-store>
+
+JAR file can be download from here (or somewhere else): <http://ftp.gnome.org/mirror/eclipse.org/eclipse/updates/3.8/R-3.8.2-201301310800/plugins/>
+
 # Git
 
 ## Add toolbar
