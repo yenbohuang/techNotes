@@ -20,12 +20,24 @@ See details on <https://forums.virtualbox.org/viewtopic.php?t=15868>
 
 See details on <http://askubuntu.com/questions/73589/higher-screen-resolution-for-virtualbox>
 
-# Fix add on issue for CentOS 7
+# VirtualBox Guest Additions
+
+## Fix add on issue for CentOS
 
 Install the following packages before installing add on:
 
     sudo yum install kernel-devel
     sudo yum install gcc
+
+## Manual install for CentOS
+
+Insert ISO image from VirtualBox menu then
+
+    cd /run/media/<user name>/VBOXADDITIONS_<version number>/
+    sudo rcvboxadd setup
+    sudo ./VBoxLinuxAdditions.run
+
+See details in <https://www.virtualbox.org/manual/ch04.html>
 
 # Host-only adapter
 
