@@ -13,13 +13,16 @@ We need to add extra settings and overwrite the default behavior:
 
 * Prepare "soapui-settings.xml" file with the following content. Other options are not required and the default values are applied.
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <con:soapui-settings xmlns:con="http://eviware.com/soapui/config">
-      <con:setting id="HttpSettings@response-compression">false</con:setting>
-    </con:soapui-settings>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <con:soapui-settings xmlns:con="http://eviware.com/soapui/config">
+    <con:setting id="HttpSettings@response-compression">false</con:setting>
+</con:soapui-settings>
+```
 
 * Attach "soapui-settings.xml" into Maven POM file:
 
+```xml
     ...
     <plugins>
       <plugin>
@@ -35,10 +38,12 @@ We need to add extra settings and overwrite the default behavior:
       </plugin>
     </plugins>
     ...
+```
 
 * Review the log entry and see if "soapui-settings.xml" is actually applied.
-
-    17:02:48,808 INFO  [DefaultSoapUICore] initialized soapui-settings from [/home/yenbo.huang/test-project/src/test/resources/soapui-settings.xml]
+```
+17:02:48,808 INFO  [DefaultSoapUICore] initialized soapui-settings from [/home/yenbo.huang/test-project/src/test/resources/soapui-settings.xml]
+```
 
 Refer to the following pages for more details:
 * <https://en.wikipedia.org/wiki/HTTP_compression>
