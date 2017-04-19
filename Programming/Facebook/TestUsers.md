@@ -18,8 +18,10 @@
   * <https://developers.facebook.com/docs/graph-api/reference/v2.8/app/accounts/test-users>
 * App access token is available on Access Token Tool after login developer account.
   * <https://developers.facebook.com/tools/accesstoken/>
-  
-    https://graph.facebook.com/v2.8/{App ID}/accounts/test-users?fields=access_token&access_token={App access token}
+
+```
+https://graph.facebook.com/v2.8/{App ID}/accounts/test-users?fields=access_token&access_token={App access token}
+```
 
 Refer to the following pages for more details:
 * <https://developers.facebook.com/docs/apps/test-users>
