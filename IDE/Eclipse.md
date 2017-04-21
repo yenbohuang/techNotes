@@ -66,6 +66,10 @@ See details on <https://github.com/yenbohuang/techNotes/tree/master/IDE>
 
 See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-in-eclipse> 
 
+## Display Memory Usage in Task Bar
+
+* Windows > Preferences > General > Show Heap Status checkbox
+
 # eclipse.ini
 
 ## Change UI language
