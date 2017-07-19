@@ -51,6 +51,30 @@ Restart VM.
 
 See <https://www.centos.org/forums/viewtopic.php?t=47088> for details.
 
+## Install xRDP
+
+    sudo yum install xrdp tigervnc-server
+    sudo systemctl start xrdp.service
+    sudo netstat -antup | grep xrdp
+    sudo systemctl enable xrdp.service
+
+See <http://www.itzgeek.com/how-tos/linux/centos-how-tos/install-xrdp-on-centos-7-rhel-7.html> for details.
+
+### Enable xfce for xRDP
+
+* Create `~/.Xclients` with the following content:
+
+    #!/bin/bash
+    XFCE="$(which xfce4-session 2>/dev/null)"
+    exec "$XFCE"
+
+* Make it executable and restart xRDP.
+
+    chmod 755 ~/.Xclients
+    sudo service xrdp restart
+
+See <https://www.centos.org/forums/viewtopic.php?t=51046> for details.
+
 # Ubuntu
 
 ## Install GNOME desktop on Ununtu

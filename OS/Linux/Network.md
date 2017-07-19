@@ -49,6 +49,8 @@ See details on:
 
 # /etc/resolv.conf
 
+## Ubuntu
+
 * Add nameserver in this file
 
     sudo nano /etc/resolvconf/resolv.conf.d/head
@@ -62,6 +64,14 @@ See details on:
     sudo resolvconf -u
 
 See details on <http://www.lampnode.com/linux/howto-setup-nameserver-on-ubuntu-1404-by-resolvconf/>
+
+## CentOS
+
+* Make nameserver permanent
+
+Add `PEERDNS=no` to `/etc/sysconfig/network-scripts/ifcfg-***`.
+
+See details on <https://www.centos.org/forums/viewtopic.php?t=62970>
 
 # Mounting network drive by samba
 
