@@ -75,6 +75,13 @@ See <http://www.itzgeek.com/how-tos/linux/centos-how-tos/install-xrdp-on-centos-
 
 See <https://www.centos.org/forums/viewtopic.php?t=51046> for details.
 
+### Reuse the same session
+
+    echo xfce4-session > .xsession
+    sudo service xrdp restart
+
+See <http://c-nergy.be/blog/?p=6046> for details.
+
 # Ubuntu
 
 ## Install GNOME desktop on Ununtu
