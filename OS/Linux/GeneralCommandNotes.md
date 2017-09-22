@@ -66,11 +66,25 @@ Run the following commands after changes:
 
 See details on <https://www.freedesktop.org/software/systemd/man/systemd.service.html>
 
+# Disk and Memory
+
+## Check memory usage
+
+* Summary of swap usage
+
+    swapon -s
+
+* Check memory usage
+
+    free -m
+
+See details on <https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7>
+
 ## Check Disk Usages
 
 * Shows the amount of disk space used and available on Linux file systems.
 
-    df
+    df -h
 
 * To list top 10 directories eating disk space.
 
@@ -80,11 +94,13 @@ See details on <https://www.freedesktop.org/software/systemd/man/systemd.service
 
     du
 
-See details on <http://www.cyberciti.biz/faq/linux-check-disk-space-command/>
+See details on:
+* <http://www.cyberciti.biz/faq/linux-check-disk-space-command/>
+* <https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7>
 
 # Logging
 
-## Out message on both console and log file
+## Output message on both console and log file
 
     some-command | tee -a file
 
