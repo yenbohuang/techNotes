@@ -37,8 +37,9 @@ See details on <https://docs.docker.com/engine/tutorials/dockerizing/>
     while [ 1=1 ]
     do
      clear
+     docker images | grep -v none
      docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Command}}\t{{.RunningFor}}\t{{.Status}}"
-     echo "Refereshed every 5 seconds....$(date)"
+     echo "Refreshed every 5 seconds....$(date)"
      sleep 5
     done
 
