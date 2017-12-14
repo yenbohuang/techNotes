@@ -30,3 +30,13 @@ TODO: need reference link!
 * Run `rpm -q --whatprovides java` and see if "alternatives" is set correctly.
 
 See details on <http://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html>
+
+# Make JDK Portable on Windows
+
+* Extract "jdk-9.0.1_windows-x64_bin.exe".
+* Extract "tools.zip".
+* Run this line in CMD under "jdk-9.0.1_windows-x64_bin\tools" folder
+
+    for /r %i in (*.pack) do .\bin\unpack200.exe %i %~pi%~ni.jar
+
+See details on <https://techtavern.wordpress.com/2014/03/25/portable-java-8-sdk-on-windows/>
