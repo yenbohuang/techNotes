@@ -33,8 +33,16 @@ See details on <http://docs.oracle.com/javase/8/docs/technotes/guides/install/li
 
 # Make JDK Portable on Windows
 
-* Open "jdk-9.0.1_windows-x64_bin.exe" by 7-zip and enter "\.rsrc\1033\JAVA_CAB10\111\".
+Running Java without libraries:
+* Open "jdk-*_windows-x64_bin.exe" by 7-zip and enter "\.rsrc\1033\JAVA_CAB10\111\".
 * Extract "tools.zip".
-* Run `for /r %i in (*.pack) do .\bin\unpack200.exe %i %~pi%~ni.jar` in CMD under "jdk-9.0.1_windows-x64_bin\tools" folder
+* Run this line in CMD under "jdk-*_windows-x64_bin\tools" folder.
+
+`for /r %i in (*.pack) do .\bin\unpack200.exe %i %~pi%~ni.jar`
+
+If you need to use it in Eclipse, proceed with the following steps:
+* Extract "jdk-*_linux-x64_bin.tar.gz" by 7-zip.
+* Copy "jdk-*_linux-x64_bin.tar\lib" folder and overwrite "jdk-*_windows-x64_bin\tools\lib" folder.
+* Point Installed JRE to "jdk-*_windows-x64_bin\tools\" folder and see if all JAR files are configured correctly.
 
 See details on <https://techtavern.wordpress.com/2014/03/25/portable-java-8-sdk-on-windows/>
