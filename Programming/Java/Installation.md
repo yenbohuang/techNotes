@@ -33,7 +33,7 @@ See details on <http://docs.oracle.com/javase/8/docs/technotes/guides/install/li
 
 # Make JDK Portable on Windows
 
-* Extract "jdk-9.0.1_windows-x64_bin.exe".
+* Open "jdk-9.0.1_windows-x64_bin.exe" by 7-zip and enter "\.rsrc\1033\JAVA_CAB10\111\".
 * Extract "tools.zip".
 * Run `for /r %i in (*.pack) do .\bin\unpack200.exe %i %~pi%~ni.jar` in CMD under "jdk-9.0.1_windows-x64_bin\tools" folder
 
