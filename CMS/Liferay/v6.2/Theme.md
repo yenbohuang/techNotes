@@ -3,7 +3,9 @@
 * Cannot be run by Eclipse WTP "add service"
 * Run by deploy scope
 
-    mvn clean package liferay:deploy
+```
+mvn clean package liferay:deploy
+```
 
 # Making Themes Configurable with Settings
 
