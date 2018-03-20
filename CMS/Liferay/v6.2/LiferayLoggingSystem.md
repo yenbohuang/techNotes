@@ -3,7 +3,9 @@
 * “System.out” will print logs on console
 * It can be redirected to a file
 
-    catalina.bat run > catalina.out 2>&1
+```
+catalina.bat run > catalina.out 2>&1
+```
 
 # Add category and adjust log level
 
