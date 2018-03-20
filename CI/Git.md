@@ -19,34 +19,24 @@
 
 Configurations are set in `~/.gitconfig`.
 
-## Easier by EGit
-
-## Easier by command-line
-
-### Set username and email
+## Set username and email
 
     $ git config --global user.name "John Doe"
     $ git config --global user.email johndoe@example.com
 
-### List settings
+## List settings
 
     $ git config --list
 
 # Project
 
-## Easier by EGit
-
-## Easier by command-line
-
-### Clone a project
+## Clone a project
 
     $ git clone https://github.com/libgit2/libgit2
 
 # Files
 
-## Easier by EGit
-
-### Showing file status and current branch name
+## Showing file status and current branch name
 
 Show complete details:
 
@@ -56,19 +46,19 @@ Show simple status:
 
     $ git status -s
 
-### Add a file or directory
+## Add a file or directory
 
     $ git add <file or directory>
 
-### Rename a file
+## Rename a file
 
     $ git mv <old file name> <new file name>
 
-### Revert changes in working directory
+## Revert changes in working directory
 
     $ git checkout -- <file>
 
-### Commit changes
+## Commit changes
 
 Commit files (no need to use `git add`) with message:
 
@@ -86,9 +76,7 @@ Change commit message or add forgotten files:
 
     $ git commit --amend
 
-## Easier by command-line
-
-### Remove a file or directory
+## Remove a file or directory
 
     $ git rm <file or directory>
 
@@ -100,22 +88,22 @@ Keep the file in your working tree  but  remove  it  from  your  staging  area:
 
     $ git rm --cached <file or directory>
 
-### Unstage a file
+## Unstage a file
 
     $ git reset HEAD <file>
 
+## Delete local commit one-by-one
+
+    $ git reset --hard HEAD^
+
 # Remote
 
-## Easier by EGit
-
-### Showing remote information
+## Showing remote information
 
     $ git remote -v
     $ git remote show <remote name>
 
-## Easier by command-line
-
-### Add a new remote Git repository
+## Add a new remote Git repository
 
 Add a new remote Git repository as a remote name:
 
@@ -125,11 +113,11 @@ Add a remote for your local git that references upstream:
 
     $ git remote add upstream <url>
 
-### Get data from remote and (try to) merge into working directory
+## Get data from remote and (try to) merge into working directory
 
     $ git pull
 
-### Push changes to remote
+## Push changes to remote
  
     $ git push <remote name> <branch name>
 
@@ -139,9 +127,7 @@ Push "master" branch to "origin" server:
 
 # Branches
 
-## Easier by EGit
-
-### Create/switch branch
+## Create/switch branch
 
 Create a branch:
 
@@ -155,7 +141,7 @@ Create and switch to a branch
 
     $ git checkout -b <branch name>
 
-### Push branch
+## Push branch
 
 Push a branch to remote:
 
@@ -165,13 +151,11 @@ Push a branch to where you pulled it:
 
     $ git push origin <branch name>
 
-### See what tracking branches you have set up
+## See what tracking branches you have set up
 
     $ git branch -vv
 
-## Easier by command-line
-
-### Merge changes
+## Merge changes
 
 Merge branch back to master:
 
@@ -183,7 +167,7 @@ Update master to branch:
     $ git checkout <branch name>
     $ git merge master
 
-### Delete branch
+## Delete branch
 
     # git branch -d <branch name>
 
