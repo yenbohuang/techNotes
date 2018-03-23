@@ -44,6 +44,17 @@
 * <https://github.com/liferay/liferay-portal/blob/master/portal-web/test/functional/com/liferay/portalweb/dependencies/workflow_definition_task_timers.xml>
 * <https://github.com/liferay/liferay-docs/blob/master/discover/deployment/code/legal-workflow-script.xml>
 
+# Change mail sender/subject
+
+TODO I didn't try this, but the following ticket claim that it works:
+
+<https://issues.liferay.com/browse/LPS-36149>
+
+```
+workflowContext.put("notificationSenderAddress", "no-reply@test.com");
+workflowContext.put("notificationSenderName", "My Custom Name");
+```
+
 # References
 
 * User manual <https://dev.liferay.com/documents/10184/510059/indexed-using-liferay-portal-62.pdf>
