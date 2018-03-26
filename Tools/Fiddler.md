@@ -1,8 +1,21 @@
 # POST a request
 
-1. Choose "Composer -> Parsed" tab.
-1. Choose "POST" and enter URL.
-1. For POST parameters, add the request header `Content-type: application/x-www-form-urlencoded`. It won't work if you didn't add it.
-1. Put parameters or JSON object in "Request Body".
-1. Click "Execute" button.
-1. Check response by "Inspectors" tab.
+* Choose "Composer -> Parsed" tab.
+* Choose "POST" and enter URL.
+
+* For request body, add the following request header:
+
+```
+Content-Type: application/json;charset=UTF-8
+Accept: application/json;charset=UTF-8
+```
+
+* For POST parameters, add the following request header:
+
+```
+Content-type: application/x-www-form-urlencoded
+```
+
+* Put parameters or JSON object in "Request Body".
+* Click "Execute" button.
+* Check response by "Inspectors" tab.
