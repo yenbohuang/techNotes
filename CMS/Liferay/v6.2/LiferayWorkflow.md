@@ -46,14 +46,15 @@
 
 # Change mail sender/subject
 
-TODO I didn't try this, but the following ticket claim that it works:
-
-<https://issues.liferay.com/browse/LPS-36149>
+Overwrite it in workflow:
+* Remember granting proper permission to the email account, or Liferay will fall back to mail account in configuration file.
 
 ```
 workflowContext.put("notificationSenderAddress", "no-reply@test.com");
 workflowContext.put("notificationSenderName", "My Custom Name");
 ```
+
+<https://issues.liferay.com/browse/LPS-36149>
 
 # References
 
