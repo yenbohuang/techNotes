@@ -5,7 +5,10 @@ CI
 * Hudson/Jenkins Mylyn Builds Connector <http://marketplace.eclipse.org/content/hudsonjenkins-mylyn-builds-connector>
 
 Editors
-* Properties Editor <https://marketplace.eclipse.org/content/properties-editor>
+* Properties Editor
+  * <https://marketplace.eclipse.org/content/properties-editor>
+  * <http://propedit.osdn.jp/>
+  * Alternate update site: <http://propedit.osdn.jp/eclipse/updates>
 * Markdown Text Editor <https://marketplace.eclipse.org/content/markdown-text-editor>
 * ShellEd <http://sourceforge.net/projects/shelled>. Note that you don't have to download it from sourceforge. Use "help-> Install New Software" and find "Dynamic Languages Toolkit - ShellEd".
 
