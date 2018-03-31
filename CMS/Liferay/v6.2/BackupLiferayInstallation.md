@@ -26,6 +26,19 @@
   * (Recommended) Cluster Link or Solr.
   * (Not recommended) In database.
 
+# Patching Liferay
+
+* Login customer portal with subscription account.
+  * <https://web.liferay.com/group/customer>
+* Download patch tool if yours is too old to patch
+  * <https://web.liferay.com/group/customer/products/patching-tool>
+  * Decompress and overwrite `liferay-portal-6.2-ee-sp8\patching-tool` folder directly.
+* Select the product you purchased and download the patch
+  * <https://web.liferay.com/group/customer/products/portal/6.2>
+* Copy patch file to `liferay-portal-6.2-ee-sp8\patching-tool\patches`
+* Shutdown Liferay
+* Run `patching-tool.bat install` under `liferay-portal-6.2-ee-sp8\patching-tool\`.
+
 # References
 
 * User manual <https://dev.liferay.com/documents/10184/510059/indexed-using-liferay-portal-62.pdf>
