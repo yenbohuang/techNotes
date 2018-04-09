@@ -1,6 +1,13 @@
 # Use different template for the same data structure
 
-* <https://web.liferay.com/web/sushilsaini/blog/-/blogs/same-web-content-showing-with-different-display-template->
+* Define data structure.
+* Define two or more templates with the same data structure.
+* Choose the target page and add "Web Content Display" portlet.
+* Choose "Select Web Content" link.
+* Select existing "Web Content" and save.
+* Choose the template you want as different layout and save.
+
+See details in  <https://web.liferay.com/web/sushilsaini/blog/-/blogs/same-web-content-showing-with-different-display-template->
 
 # Getting path and querystring parameters
 
