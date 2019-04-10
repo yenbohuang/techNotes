@@ -11,5 +11,11 @@
       * Press "Ctrl + Alt + F2" and login
       * `sudo vi /etc/gdm3/custom.conf`
       * Uncomment "#WaylandEnable=false"
+    * Change resolution <https://metinsaylan.com/8991/how-to-change-screen-resolution-on-ubuntu-18-04-in-hyper-v/>
+      * `sudo nano /etc/default/grub`
+      * Append "video=hyperv_fb:1920x1080"
+        * `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"`
+      * `sudo update-grub`
+      * Reboot
   * Run Hyper-V Linux Guest VM Enhancements
     * <https://github.com/Microsoft/linux-vm-tools>
