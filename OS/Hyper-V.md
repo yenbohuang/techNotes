@@ -6,5 +6,10 @@
   * Create virtual switch.
   * Create Generation 1 VM (I don't know how to work on Gen 2 yet.)
 * After install
+  * Ubuntu
+    * Disable Wayland <https://askubuntu.com/questions/1085296/ubuntu-18-10-cosmic-not-starting-gnome-session-on-bootup>
+      * Press "Ctrl + Alt + F2" and login
+      * `sudo vi /etc/gdm3/custom.conf`
+      * Uncomment "#WaylandEnable=false"
   * Run Hyper-V Linux Guest VM Enhancements
     * <https://github.com/Microsoft/linux-vm-tools>
