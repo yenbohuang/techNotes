@@ -96,3 +96,9 @@ See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation>
 * Choose session when login
 
 See details on <http://askubuntu.com/questions/450294/how-to-switch-from-unity-to-gnome>
+
+## Install Xfce desktop
+
+    sudo apt-get install -y xfce4 xfce4-goodies
+
+See details on <https://www.liquidweb.com/kb/install-xfce-desktop-environment-on-ubuntu-16-04/>
