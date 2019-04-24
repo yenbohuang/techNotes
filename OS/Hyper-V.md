@@ -1,3 +1,4 @@
+* Download Ubuntu LTS version which is more stable.
 * Follow this blog and create VM
   * <https://www.windowscentral.com/how-run-linux-distros-windows-10-using-hyper-v>
   * Enable "Virtualization Technology" and "Hardware Enforced Data Execution Prevention" on BIOS.
@@ -5,6 +6,7 @@
   * Enable Hyper-V by "Programs and Features" on Windows setting.
   * Create virtual switch.
   * Create Generation 1 VM (I don't know how to work on Gen 2 yet.)
+  * Disable secure boot.
 * After install
   * Ubuntu
     * Disable Wayland <https://askubuntu.com/questions/1085296/ubuntu-18-10-cosmic-not-starting-gnome-session-on-bootup>
