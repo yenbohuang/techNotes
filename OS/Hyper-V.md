@@ -20,10 +20,22 @@
         * `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"`
       * `sudo update-grub`
       * Reboot
-    * Set IP in eth1
+    * Set IP in eth1 (I don't know how to make DHCP work yet)
       * Use `ipconfig` under Windows and check "Ethernet adaptor vEthernet".
       * Manual assign IPv4 address in Ubuntu. For example, if IP is "169.254.141.53" for Windows, assign "169.254.141.53" for Ubuntu.
       * Assign the same subnet mask. For example, "255.255.0.0".
     * Enable sshd.
   * (Optional) Run Hyper-V Linux Guest VM Enhancements
     * <https://github.com/Microsoft/linux-vm-tools>
+  * Install developer tools
+    * Google Chrome
+    * Java
+      * Zulu 8 and 11
+      * Eclipse IDE
+        * Properties editor
+      * Apache Maven
+      * Apache ActiveMQ
+    * Azure
+      * Visual Studio Code
+      * Dotnet Core
+      * Azure CLI
