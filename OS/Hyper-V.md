@@ -39,3 +39,6 @@
       * Visual Studio Code
       * Dotnet Core
       * Azure CLI
+    * Containers
+      * Docker CE
+      * Docker Compose
