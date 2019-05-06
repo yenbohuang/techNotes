@@ -52,3 +52,5 @@ See details on <https://kb.wisc.edu/helpdesk/page.php?id=1868>
 * Window key + P: Switch screen
 * Window key + L: Lock computer
 * Window key + D: Show desktop
+* Window key + G: Start game bar and record the screen
+  * https://www.windowscentral.com/windows-10-game-bar-everything-you-need-know
