@@ -43,51 +43,51 @@ Start VM.
 Insert guest additions CD image.
 
 Install VirtualBox addon. If this process failed due to missing packages, install pre-required packages for VirtualBox addons. Kernel version may very depending on OS versions. 
-
-    sudo yum install kernel-devel-3.10.0-327.el7.x86_64
-    sudo yum install gcc
-
+```
+sudo yum install kernel-devel-3.10.0-327.el7.x86_64
+sudo yum install gcc
+```
 Restart VM. 
 
 See <https://www.centos.org/forums/viewtopic.php?t=47088> for details.
 
 ## Install xRDP
-
-    sudo yum install xrdp tigervnc-server
-    sudo systemctl start xrdp.service
-    sudo netstat -antup | grep xrdp
-    sudo systemctl enable xrdp.service
-
+```
+sudo yum install xrdp tigervnc-server
+sudo systemctl start xrdp.service
+sudo netstat -antup | grep xrdp
+sudo systemctl enable xrdp.service
+```
 See <http://www.itzgeek.com/how-tos/linux/centos-how-tos/install-xrdp-on-centos-7-rhel-7.html> for details.
 
 ### Enable xfce for xRDP
 
 * Create `~/.Xclients` with the following content:
-
-    #!/bin/bash
-    XFCE="$(which xfce4-session 2>/dev/null)"
-    exec "$XFCE"
-
+```
+#!/bin/bash
+XFCE="$(which xfce4-session 2>/dev/null)"
+exec "$XFCE"
+```
 * Make it executable and restart xRDP.
-
-    chmod 755 ~/.Xclients
-    sudo service xrdp restart
-
+```
+chmod 755 ~/.Xclients
+sudo service xrdp restart
+```
 See <https://www.centos.org/forums/viewtopic.php?t=51046> for details.
 
 ### Reuse the same session
-
-    echo xfce4-session > .xsession
-    sudo service xrdp restart
-
+```
+echo xfce4-session > .xsession
+sudo service xrdp restart
+```
 See <http://c-nergy.be/blog/?p=6046> for details.
 
 # Ubuntu
 
 ## Install GNOME desktop on Ununtu
-
-    sudo apt-get install ubuntu-gnome-desktop
-
+```
+sudo apt-get install ubuntu-gnome-desktop
+```
 See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation> 
 
 ## Switch to GNOME from Unity
@@ -98,7 +98,7 @@ See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation>
 See details on <http://askubuntu.com/questions/450294/how-to-switch-from-unity-to-gnome>
 
 ## Install Xfce desktop
-
-    sudo apt-get install -y xfce4 xfce4-goodies
-
+```
+sudo apt-get install -y xfce4 xfce4-goodies
+```
 See details on <https://www.liquidweb.com/kb/install-xfce-desktop-environment-on-ubuntu-16-04/>
