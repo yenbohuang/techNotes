@@ -102,3 +102,16 @@ See details on <http://askubuntu.com/questions/450294/how-to-switch-from-unity-t
 sudo apt-get install -y xfce4 xfce4-goodies
 ```
 See details on <https://www.liquidweb.com/kb/install-xfce-desktop-environment-on-ubuntu-16-04/>
+
+## Install xrdp
+
+You will see a blank screen if you only install xrdp. After some searches on google, modifying "startwm.sh" does not work but this works for me.
+
+```
+sudo apt install xrdp xserver-xorg-core xorgxrdp
+echo xfce4-session > .xsession
+sudo service xrdp restart
+```
+See the followings for details:
+* <https://ubuntuforums.org/showthread.php?t=2413157>
+* <http://c-nergy.be/blog/?p=6046>
