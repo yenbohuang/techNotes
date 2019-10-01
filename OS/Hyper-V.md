@@ -15,17 +15,12 @@
         * Press "Ctrl + Alt + F2" and login
         * `sudo vi /etc/gdm3/custom.conf`
         * Uncomment "#WaylandEnable=false"
-    * Change resolution <https://metinsaylan.com/8991/how-to-change-screen-resolution-on-ubuntu-18-04-in-hyper-v/>
-      * `sudo nano /etc/default/grub`
-      * Append "video=hyperv_fb:1920x1080"
-        * `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"`
-      * `sudo update-grub`
-      * Reboot
     * Set IP in eth1 (I don't know how to make DHCP work yet)
       * Use `ipconfig` under Windows and check "Ethernet adaptor vEthernet".
       * Manual assign IPv4 address in Ubuntu. For example, if IP is "169.254.141.53" for Windows, assign "169.254.141.101" for Ubuntu.
       * Assign the same subnet mask. For example, "255.255.0.0".
     * Enable sshd.
+  * Install xRDP (since enhanced session does not work for me yet).
   * Install developer tools
     * Google Chrome
     * Java
@@ -41,6 +36,13 @@
     * Containers
       * Docker CE
       * Docker Compose
+* Optional steps
+    * Change resolution <https://metinsaylan.com/8991/how-to-change-screen-resolution-on-ubuntu-18-04-in-hyper-v/>
+      * `sudo nano /etc/default/grub`
+      * Append "video=hyperv_fb:1920x1080"
+        * `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"`
+      * `sudo update-grub`
+      * Reboot
 * Does not work on Win 10 yet
   * Install linux-azure <https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/supported-ubuntu-virtual-machines-on-hyper-v>
   * Run Hyper-V Linux Guest VM Enhancements <https://github.com/Microsoft/linux-vm-tools>
