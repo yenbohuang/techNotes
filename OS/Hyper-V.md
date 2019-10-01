@@ -5,15 +5,16 @@
   * Check pre-requirement by `systeminfo.exe`
   * Enable Hyper-V by "Programs and Features" on Windows setting.
   * Create virtual switch.
-  * Create Generation 1 VM (I don't know how to work on Gen 2 yet.)
+  * Create Generation 2 VM.
   * Disable secure boot.
   * Add both Internal Virtual Switch and External Virtual Switch
 * After install
   * Ubuntu
-    * Disable Wayland <https://askubuntu.com/questions/1085296/ubuntu-18-10-cosmic-not-starting-gnome-session-on-bootup>
-      * Press "Ctrl + Alt + F2" and login
-      * `sudo vi /etc/gdm3/custom.conf`
-      * Uncomment "#WaylandEnable=false"
+    * After first reboot, Ubuntu is hang at some point and I cannot fix it by reboot. It works after disabling wayland.
+      * Disable Wayland <https://askubuntu.com/questions/1085296/ubuntu-18-10-cosmic-not-starting-gnome-session-on-bootup>
+        * Press "Ctrl + Alt + F2" and login
+        * `sudo vi /etc/gdm3/custom.conf`
+        * Uncomment "#WaylandEnable=false"
     * Change resolution <https://metinsaylan.com/8991/how-to-change-screen-resolution-on-ubuntu-18-04-in-hyper-v/>
       * `sudo nano /etc/default/grub`
       * Append "video=hyperv_fb:1920x1080"
