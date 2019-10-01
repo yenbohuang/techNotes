@@ -26,8 +26,6 @@
       * Manual assign IPv4 address in Ubuntu. For example, if IP is "169.254.141.53" for Windows, assign "169.254.141.53" for Ubuntu.
       * Assign the same subnet mask. For example, "255.255.0.0".
     * Enable sshd.
-  * (Optional) Run Hyper-V Linux Guest VM Enhancements
-    * <https://github.com/Microsoft/linux-vm-tools>
   * Install developer tools
     * Google Chrome
     * Java
@@ -43,3 +41,6 @@
     * Containers
       * Docker CE
       * Docker Compose
+* Does not work on Win 10 yet
+  * Install linux-azure <https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/supported-ubuntu-virtual-machines-on-hyper-v>
+  * Run Hyper-V Linux Guest VM Enhancements <https://github.com/Microsoft/linux-vm-tools>
