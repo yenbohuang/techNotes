@@ -23,7 +23,7 @@
       * Reboot
     * Set IP in eth1 (I don't know how to make DHCP work yet)
       * Use `ipconfig` under Windows and check "Ethernet adaptor vEthernet".
-      * Manual assign IPv4 address in Ubuntu. For example, if IP is "169.254.141.53" for Windows, assign "169.254.141.53" for Ubuntu.
+      * Manual assign IPv4 address in Ubuntu. For example, if IP is "169.254.141.53" for Windows, assign "169.254.141.101" for Ubuntu.
       * Assign the same subnet mask. For example, "255.255.0.0".
     * Enable sshd.
   * Install developer tools
