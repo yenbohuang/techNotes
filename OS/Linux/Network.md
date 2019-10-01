@@ -22,12 +22,7 @@ See details on <http://ipset.netfilter.org/iptables.man.html>
 
 ### Ubuntu
     sudo apt-get install openssh-server 
-    sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
-    sudo chmod a-w /etc/ssh/sshd_config.factory-defaults
-    sudo gedit /etc/ssh/sshd_config
-    sudo restart ssh
-
-See details on <https://help.ubuntu.com/community/SSH/OpenSSH/Configuring>
+    sudo service sshd start
 
 ### CentOS
 
