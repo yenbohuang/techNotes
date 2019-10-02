@@ -1,3 +1,9 @@
+# Install package
+```
+sudo apt-get install <package name>
+sudo apt-get install ./***.deb
+```
+
 # Search new package
 
     apt-cache search <search_term>
@@ -27,6 +33,6 @@ See details on <http://askubuntu.com/questions/298487/not-enough-free-disk-space
 
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get dist-upgrade
+    sudo apt-get autoremove
 
 See details on <http://askubuntu.com/questions/462449/update-the-system-from-terminal>
