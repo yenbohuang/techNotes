@@ -20,9 +20,24 @@
 Configurations are set in `~/.gitconfig`.
 
 ## Set username and email
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
 
-    $ git config --global user.name "John Doe"
-    $ git config --global user.email johndoe@example.com
+## Global setting for line ends
+
+Configure Git on OS X or Linux to properly handle line endings
+```
+$ git config --global core.autocrlf input
+```
+
+Configure Git on Windows to properly handle line endings
+```
+$ git config --global core.autocrlf true
+```
+
+<https://help.github.com/en/articles/configuring-git-to-handle-line-endings>
 
 ## List settings
 
