@@ -17,7 +17,8 @@ sudo usermod -aG docker $USER
 # logout OS and run docker commends without sudo
 ```
 
-<https://docs.docker.com/install/linux/docker-ce/ubuntu/>
+* How-to: <https://docs.docker.com/install/linux/docker-ce/ubuntu/>
+* Post install steps: <https://docs.docker.com/install/linux/linux-postinstall/>
 
 # Docker + Consul + Swarm + Registrator + Nginx
 
