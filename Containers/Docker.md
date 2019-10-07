@@ -1,3 +1,24 @@
+# Install Docker CE
+
+```
+# install docker CE
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo docker run hello-world
+
+# post install steps
+sudo usermod -aG docker $USER
+
+# logout OS and run docker commends without sudo
+```
+
+<https://docs.docker.com/install/linux/docker-ce/ubuntu/>
+
 # Docker + Consul + Swarm + Registrator + Nginx
 
 These blog posts (from part 1 to 4) introduce about how to use "Docker + Consul + Swarm + Registrator + Nginx" for blue-green deployment:
