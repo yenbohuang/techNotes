@@ -35,6 +35,12 @@ See details on <http://stackoverflow.com/questions/48198/how-can-you-find-out-wh
 
 See details on <https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ipconfig.mspx?mfr=true>
 
+## Sharing Files by Bluetooth
+
+The speed is very slow for big files, but it works.
+
+* <https://support.microsoft.com/en-us/help/4026874/windows-10-share-files-over-bluetooth>
+
 # Lock screen by command line
 
     C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
