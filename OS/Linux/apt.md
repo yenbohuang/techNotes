@@ -34,5 +34,8 @@ See details on <http://askubuntu.com/questions/298487/not-enough-free-disk-space
     sudo apt-get update
     sudo apt-get upgrade
     sudo apt-get autoremove
+    sudo do-release-upgrade
 
-See details on <http://askubuntu.com/questions/462449/update-the-system-from-terminal>
+See details on:
+* <http://askubuntu.com/questions/462449/update-the-system-from-terminal>
+* <https://help.ubuntu.com/lts/serverguide/installing-upgrading.html>
