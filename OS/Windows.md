@@ -41,6 +41,16 @@ The speed is very slow for big files, but it works.
 
 * <https://support.microsoft.com/en-us/help/4026874/windows-10-share-files-over-bluetooth>
 
+## Sharing Files by Mobile Hotspot
+
+* Add a share folder on host computer.
+* Open "Settings -> Network & Internet -> Mobile Hotspot" on host computer.
+  * Disable "Turn on Remotely".
+* Use `ipconfig` and know the host computer IP address.
+* Connect guest computer to host hotspot by Wi-Fi and access the shared folder (e.g., "\\\\192.168.137.1").
+
+<https://support.microsoft.com/en-us/help/4027762/windows-use-your-pc-as-a-mobile-hotspot>
+
 # Lock screen by command line
 
     C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
