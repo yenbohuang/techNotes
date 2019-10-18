@@ -52,3 +52,11 @@ Note that the server upgrade will use GNU screen and automatically re-attach in 
 There are no offline upgrade options for Ubuntu Desktop and Ubuntu Server. Please ensure you have network connectivity to one of the official mirrors or to a locally accessible mirror and follow the instructions above. 
 
 See details on <https://wiki.ubuntu.com/UtopicUnicorn/ReleaseNotes> 
+
+# Enable Time Synchronization
+
+```
+sudo apt install chrony
+```
+
+<https://help.ubuntu.com/lts/serverguide/NTP.html>
