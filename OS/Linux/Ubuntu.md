@@ -60,3 +60,10 @@ sudo apt install chrony
 ```
 
 <https://help.ubuntu.com/lts/serverguide/NTP.html>
+
+# Set Timezone
+```
+sudo timedatectl set-timezone your_time_zone
+```
+
+<https://linuxize.com/post/how-to-set-or-change-timezone-on-ubuntu-18-04/>
