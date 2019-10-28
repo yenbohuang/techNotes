@@ -92,7 +92,7 @@ See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation>
 
 ## Install Xfce desktop or KDE desktop
 ```
-udo apt-get install xubuntu-desktop
+sudo apt-get install xubuntu-desktop
 sudo apt-get install kubuntu-desktop
 ```
 See details on <https://www.techrepublic.com/blog/diy-it-guy/diy-replace-ubuntu-unity-with-a-different-desktop/>
