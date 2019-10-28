@@ -90,18 +90,19 @@ sudo apt-get install ubuntu-gnome-desktop
 ```
 See details on <https://wiki.ubuntu.com/UbuntuGNOME/Installation> 
 
+## Install Xfce desktop or KDE desktop
+```
+udo apt-get install xubuntu-desktop
+sudo apt-get install kubuntu-desktop
+```
+See details on <https://www.techrepublic.com/blog/diy-it-guy/diy-replace-ubuntu-unity-with-a-different-desktop/>
+
 ## Switch to GNOME from Unity
 	
 * Install GNOME
 * Choose session when login
 
 See details on <http://askubuntu.com/questions/450294/how-to-switch-from-unity-to-gnome>
-
-## Install Xfce desktop
-```
-sudo apt-get install -y xfce4 xfce4-goodies
-```
-See details on <https://www.liquidweb.com/kb/install-xfce-desktop-environment-on-ubuntu-16-04/>
 
 ## Install xrdp
 
