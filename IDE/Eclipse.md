@@ -82,11 +82,18 @@ See details on <http://stackoverflow.com/questions/9180981/how-to-support-utf-8-
 ## -vm
 
 OpenJDK is usually pre-installed in Linux distributions (e.g. Ubuntu, CentOS.) If we'd like to use Oracle JDK for running Eclipse, we have to provide the JDK path in `eclipse.ini`:
-
-    -vm
-    /opt/sun-jdk-1.6.0.02/bin/java
-    
+```
+-vm
+/opt/sun-jdk-1.6.0.02/bin/java
+```    
 See details on <https://wiki.eclipse.org/Eclipse.ini#-vm_value:_Linux_Example>
+
+You should use "javaw.exe" on windows, or the cmd console will show up:
+```
+-vm
+C:/Program Files/Java/jdk1.8.0_192/bin/javaw.exe
+```
+See details on <https://stackoverflow.com/questions/2908188/how-to-turn-off-eclipse-console-on-windows/2908462#2908462>
 
 ## Workaround KDE GTK3 incompatible issues
 
